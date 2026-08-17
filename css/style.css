@@ -1,0 +1,234 @@
+/* Color Variables & Custom Styles */
+:root {
+    --primary-color: #0a192f;
+    --accent-color: #fbbf24;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+    overflow-x: hidden;
+}
+
+.bg-primary-custom {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+.top-bar {
+    background-color: #060e1a;
+    font-size: 0.85rem;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+}
+
+.navbar .nav-link {
+    color: #334155;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Responsive Navbar Logo */
+.navbar-logo {
+    height: 50px;         
+    width: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 35px;      
+    }
+}
+
+/* Bounce and Pulse Animation */
+@keyframes bounce-pulse {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-8px) scale(1.1); /* Upar jayega aur thoda bada hoga */
+    }
+}
+
+.icon-active-anim {
+    animation: bounce-pulse 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+/* Hero Section */
+/* Professional Cleaning Hero Section */
+.cleaning-hero {
+    position: relative;
+    min-height: 90vh;
+    background: linear-gradient(rgba(46, 99, 184, 0.75), rgba(11, 29, 58, 0.85)), 
+                url('/images/bannerimage.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    color: #ffffff;
+    text-align: left; /* Desktop par left aligned professional look ke liye */
+}
+
+.cleaning-hero .hero-badge {
+    display: inline-block;
+    background: #ffc107;
+    color: #0b1d3a;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.cleaning-hero h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.cleaning-hero p {
+    font-size: 1.15rem;
+    color: #e2e8f0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Floating Feature Cards (Cleaning Business ke liye attractive touch) */
+.hero-feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991px) {
+    .cleaning-hero {
+        text-align: center; /* Mobile par sabhi text center align ho jayenge */
+        padding: 60px 15px;
+        min-height: auto;
+    }
+    .cleaning-hero h1 {
+        font-size: 2.2rem;
+    }
+    .cleaning-hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Automatic Smooth Infinite Marquee Scroll */
+.marquee-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scrollMarquee 25s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes scrollMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Yeh image ko bina kate poora dikhayega */
+    background-color: #f8f9fa; /* Background ko clean white/light rakhega */
+    padding: 10px; /* Thodi padding taaki product chipke nahi */
+}
+
+/* Offer Banner */
+.offer-banner {
+    background: linear-gradient(rgba(10, 25, 47, 0.92), rgba(66, 101, 182, 0.92)), url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Light & Clean Watercolor / Watermark Design Background for Enquiry Section */
+.light-watercolor-section {
+    background: 
+        radial-gradient(circle at 10% 20%, rgba(251, 191, 36, 0.18) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+        linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Scroll Reveal Animation Styles */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*aboutus*/
+.about-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.95), rgba(95, 136, 233, 0.92)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Team Image Zoom Effect on Hover */
+.team-img {
+    transition: transform 0.4s ease;
+}
+
+.card:hover .team-img {
+    transform: scale(1.05);
+}
+
+/* contactus*/
+/* High-End Rich Contact Banner Styling */
+.contact-hero-banner {
+    background: linear-gradient(135deg, rgba(29, 74, 141, 0.96), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Meridian - Premium Cleaning Services & Products</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- EmailJS CDN Script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+</head>
+<body>
+
+    <!-- Top Contact Bar -->
+    <div class="top-bar text-white py-2 px-4">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center text-xs">
+            <div class="d-flex align-items-center gap-3 mb-1 mb-sm-0">
+               <!-- Phone Number Clickable (Safed rang taaki dark background par dikhe) -->
+<a href="tel:+917837793820" class="text-decoration-none text-white">
+    <span><i class="fa-solid fa-phone text-warning me-1"></i> +91 7837793820</span>
+</a>
+
+<!-- Email Clickable -->
+<a href="mailto:armeridian4@gmail.com" class="text-decoration-none text-white">
+    <span><i class="fa-solid fa-envelope text-warning me-1"></i> armeridian4@gmail.com</span>
+</a>
+            </div>
+            <div class="text-warning fw-semibold">
+                <span><i class="fa-solid fa-globe me-1"></i> Serving India & International Markets</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
+</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-lg-center gap-lg-4 mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Services
+    </a>
+    <ul class="dropdown-menu shadow-lg border-0 rounded-3 py-2 animate-dropdown" aria-labelledby="servicesDropdown">
+        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Commercialservices.html">Commercial Service</a></li>
+        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Residentialcleaning.html">Residential Service</a></li>
+    </ul>
+</li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Updated Distributor Button for Direct Call -->
+<div class="d-none d-lg-block">
+    <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
+        <i class="fa-solid fa-phone me-2"></i> Call Now
+    </a>
+</div>
+        </div>
+    </nav>
+<!-- Professional Cleaning Hero Section -->
+<section class="cleaning-hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            
+            <!-- Left Side: Content & Actions -->
+            <div class="col-lg-7">
+                <span class="hero-badge">
+                    <i class="fa-solid fa-broom me-1"></i> Professional Cleaning & Hygiene Experts
+                </span>
+                
+                <h1>
+                    Sparkling Clean Spaces, <span class="text-warning">Trusted Hygiene Solutions</span>
+                </h1>
+                
+                <p>
+                    AR Meridian delivers top-tier commercial and residential cleaning services backed by our own premium range of cleaning products. From office spaces to complete facility management, we guarantee spotless excellence.
+                </p>
+                
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                    <a href="Commercialservices.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">
+                        Explore Services
+                    </a>
+                    <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-phone text-warning"></i> +91 7837793820
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Visual Cleaning Highlights (Collage/Grid Cards) -->
+            <div class="col-lg-5">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="hero-feature-box mb-3">
+                            <i class="fa-solid fa-wand-magic-sparkles text-warning fa-2x mb-2"></i>
+                            <h6 class="fw-bold mb-1">Deep Cleaning</h6>
+                            <small class="text-light opacity-75">Commercial & Residential</small>
+                        </div>
+                        <div class="hero-feature-box">
+                            <i class="fa-solid fa-box-open text-warning fa-2x mb-2"></i>
+                            <h6 class="fw-bold mb-1">Eco Products</h6>
+                            <small class="text-light opacity-75">High Quality Formula</small>
+                        </div>
+                    </div>
+                    <div class="col-6 mt-4 mt-lg-5">
+                        <div class="hero-feature-box mb-3">
+                            <i class="fa-solid fa-shield-halved text-warning fa-2x mb-2"></i>
+                            <h6 class="fw-bold mb-1">Certified Quality</h6>
+                            <small class="text-light opacity-75">ISO & GMP Standard</small>
+                        </div>
+                        <div class="hero-feature-box">
+                            <i class="fa-solid fa-users-gear text-warning fa-2x mb-2"></i>
+                            <h6 class="fw-bold mb-1">Expert Staff</h6>
+                            <small class="text-light opacity-75">Reliable Solutions</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <!-- About Section with Side Image -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 scroll-reveal">
+                    <span class="text-warning fw-bold text-uppercase tracking-wider small">About AR Meridian</span>
+                    <h2 class="fw-bold text-primary-custom display-6 mb-4 mt-2">
+                        Your Trusted Partner for Cleaning Products & Staffing Solutions
+                    </h2>
+                    <p class="text-muted mb-4 lh-lg">
+                        AR Meridian is committed to delivering high-quality cleaning products and reliable workforce solutions. We manufacture premium cleaning products under our trusted brands and provide comprehensive staffing and facility management services to businesses across India and international markets. Our ultimate focus is on maintaining exceptional quality, complete operational reliability, and establishing long-term, trustworthy business partnerships with all our valued clients and distributors worldwide.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary-custom text-white fw-bold px-4 py-3 rounded-3 shadow-sm">Know More About Us</a>
+                </div>
+                <div class="col-lg-6 scroll-reveal">
+                    <div class="position-relative">
+                        <img src="images/aboutus.avif" alt="About AR Meridian" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 400px;">
+                        <div class="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded-3 shadow border-start border-4 border-warning">
+                            <span class="d-block fw-bold text-primary-custom">Trusted Quality</span>
+                            <span class="text-muted small">Domestic & International Markets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Bar (Animated Activity) -->
+<section class="bg-primary-custom text-white py-5 text-center">
+    <div class="container">
+        <p class="text-warning fw-bold text-uppercase mb-4 tracking-wider" style="letter-spacing: 2px;">We are certified by</p>
+        
+        <div class="row justify-content-center align-items-center g-5">
+            
+            <!-- Certification 1: ISO -->
+            <div class="col-6 col-md-3 text-center">
+                <div class="mb-3">
+                    <i class="fa-solid fa-certificate text-warning fa-3x icon-active-anim"></i>
+                </div>
+                <h6 class="fw-bold text-uppercase m-0">ISO 9001:2015</h6>
+                <small class="opacity-75">Quality Management</small>
+            </div>
+
+            <!-- Certification 2: GMP -->
+            <div class="col-6 col-md-3 text-center">
+                <div class="mb-3">
+                    <i class="fa-solid fa-vial-circle-check text-warning fa-3x icon-active-anim" style="animation-delay: 0.5s;"></i>
+                </div>
+                <h6 class="fw-bold text-uppercase m-0">GMP Certified</h6>
+                <small class="opacity-75">Good Manufacturing</small>
+            </div>
+
+            <!-- Certification 3: Global Quality -->
+            <div class="col-6 col-md-3 text-center">
+                <div class="mb-3">
+                    <i class="fa-solid fa-award text-warning fa-3x icon-active-anim" style="animation-delay: 1s;"></i>
+                </div>
+                <h6 class="fw-bold text-uppercase m-0">Global Standards</h6>
+                <small class="opacity-75">International Quality</small>
+            </div>
+
+            <!-- Certification 4: Hygiene -->
+            <div class="col-6 col-md-3 text-center">
+                <div class="mb-3">
+                    <i class="fa-solid fa-hand-holding-droplet text-warning fa-3x icon-active-anim" style="animation-delay: 1.5s;"></i>
+                </div>
+                <h6 class="fw-bold text-uppercase m-0">Excellence in Hygiene</h6>
+                <small class="opacity-75">Cleaning Standards</small>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Products & Services Section (Automatic Smooth Infinite Marquee Scroll) -->
+<section id="services" class="py-5 bg-light overflow-hidden">
+    <div class="container py-4">
+        <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+            <span class="text-warning fw-bold text-uppercase tracking-wider small">Products & Services</span>
+            <h2 class="fw-bold text-primary-custom display-5 mt-2">Premium Cleaning Products & Business Solutions</h2>
+            <p class="text-muted small mt-2">Discover our high-performance formulas and corporate excellence</p>
+        </div>
+
+        <div class="marquee-wrapper position-relative overflow-hidden py-3">
+            <div class="marquee-track d-flex gap-4">
+                
+                <!-- Card 1 -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+                    <div class="position-relative" style="height: 240px;">
+                        <img src="images/AR washing.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: fill;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">01.</div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                        <div>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Advanced Washing Powder</h3>
+                            <p class="text-muted small lh-base mb-0">
+                                Experience ultimate fabric care with our next-gen active enzyme formula. It breaks down toughest grease and dirt instantly, preserving vibrant colors and delivering long-lasting freshness to every single thread.
+                            </p>
+                        </div>
+                        <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+                    <div class="position-relative" style="height: 240px;">
+                        <img src="images/AR Shine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: fill;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">02.</div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                        <div>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Fresh & Shine Guard</h3>
+                            <p class="text-muted small lh-base mb-0">
+                                Elevate indoor hygiene with a dual-action formula designed to eradicate stubborn odors and leave surfaces sparkling with a brilliant, mirror-like gloss and soothing aroma.
+                            </p>
+                        </div>
+                       <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+                    <div class="position-relative" style="height: 240px;">
+                        <img src="images/satify.png" alt="Staffing & Facility Management" class="w-100 h-100" style="object-fit: fill;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">03.</div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                        <div>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">Smart Facility & Staffing</h3>
+                            <p class="text-muted small lh-base mb-0">
+                                Empower your enterprise with specialized workforce deployment and comprehensive property maintenance, ensuring seamless corporate execution and absolute operational excellence.
+                            </p>
+                        </div>
+                        <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Duplicate Cards for Seamless Infinite Loop -->
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+                    <div class="position-relative" style="height: 240px;">
+                        <img src="images/AR wasgingpowderprimium.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: fill;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">01.</div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                        <div>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Advanced Washing Powder</h3>
+                            <p class="text-muted small lh-base mb-0">
+                                Experience ultimate fabric care with our next-gen active enzyme formula. It breaks down toughest grease and dirt instantly, preserving vibrant colors and delivering long-lasting freshness to every single thread.
+                            </p>
+                        </div>
+                        <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+                    <div class="position-relative" style="height: 240px;">
+                        <img src="images/AR freshshine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: fill;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">02.</div>
+                    </div>
+                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                        <div>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Fresh & Shine Guard</h3>
+                            <p class="text-muted small lh-base mb-0">
+                                Elevate indoor hygiene with a dual-action formula designed to eradicate stubborn odors and leave surfaces sparkling with a brilliant, mirror-like gloss and soothing aroma.
+                            </p>
+                        </div>
+                       <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+                            Book Service <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- Offer Banner -->
+            <div class="mt-5 offer-banner rounded-4 p-5 text-center text-white position-relative shadow-lg scroll-reveal">
+                <div class="position-relative z-2 max-w-800 mx-auto">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">Special Discount</span>
+                    <h3 class="fw-bold text-warning display-6 mb-3">Save up to 30% OFF when combine two of our services</h3>
+                    <p class="text-light mb-4 fw-light">
+                        Voluptas iaculis, vivamus fusce mollit placerat sagittis minus. Ipsa integer semper, mi distinctio cursus! Repudiandae aliqua nemo adipiscing voluptatum aptent.
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center gap-4 mb-4 small fw-semibold">
+                        <span><i class="fa-solid fa-circle-check text-warning me-1"></i> Client oriented</span>
+                        <span><i class="fa-solid fa-circle-check text-warning me-1"></i> Eco-Friendly Oriented</span>
+                        <span><i class="fa-solid fa-circle-check text-warning me-1"></i> Expansion / Growth</span>
+                    </div>
+                    <a href="#enquiry" class="btn btn-warning fw-bold text-dark px-5 py-3 rounded-3 shadow">Make Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="py-5 bg-white border-top">
+        <div class="container py-4">
+            <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+                <span class="text-warning fw-bold text-uppercase tracking-wider small">Why Choose AR Meridian</span>
+                <h2 class="fw-bold text-primary-custom display-5 mt-2">Serving Businesses Across India & International Markets</h2>
+                <p class="text-muted mt-3">We proudly supply our products and services to dealers, distributors, retailers, corporate clients, and business partners across domestic and global markets.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4 bg-light">
+                        <div class="feature-icon bg-warning-subtle text-warning rounded-4 mx-auto mb-4 d-flex align-items-center justify-content-center fs-3" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary-custom h5 mb-2">Premium Quality Products</h4>
+                        <p class="text-muted small">Engineered with international hygiene and safety standards for maximum effectiveness.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4 bg-light">
+                        <div class="feature-icon bg-warning-subtle text-warning rounded-4 mx-auto mb-4 d-flex align-items-center justify-content-center fs-3" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary-custom h5 mb-2">Committed to Customer Success</h4>
+                        <p class="text-muted small">Dedicated support and flexible partnership modules for long-term business growth.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4 bg-light">
+                        <div class="feature-icon bg-warning-subtle text-warning rounded-4 mx-auto mb-4 d-flex align-items-center justify-content-center fs-3" style="width: 70px; height: 70px;">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h4 class="fw-bold text-primary-custom h5 mb-2">Domestic & International Supply</h4>
+                        <p class="text-muted small">Robust distribution networks spanning across India and global international trade destinations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
+                <span class="text-warning fw-bold text-uppercase tracking-wider small">Testimonials</span>
+                <h2 class="fw-bold text-primary-custom display-5 mt-2">What Our Customers Say</h2>
+                <p class="text-muted mt-2">See how our premium cleaning products and professional services have made a difference for our clients.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Review 1 -->
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Star Ratings -->
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-muted small lh-lg mb-4">
+                                "AR Meridian's cleaning products are absolute game-changers! The quality is top-notch, and their cleaning service team was extremely professional, polite, and thorough. Highly recommended!"
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary-custom text-warning fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">TS</div>
+                            <div>
+                                <h6 class="fw-bold text-primary-custom mb-0">Tiffany Spencer</h6>
+                                <span class="text-warning small fw-semibold">Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Star Ratings -->
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-muted small lh-lg mb-4">
+                                "We regularly purchase commercial cleaning supplies for our office building from AR Meridian. Their product standards and prompt delivery service are exceptional. Truly reliable!"
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary-custom text-warning fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">PB</div>
+                            <div>
+                                <h6 class="fw-bold text-primary-custom mb-0">Philip Burke</h6>
+                                <span class="text-warning small fw-semibold">Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="col-md-4 scroll-reveal">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <!-- Star Ratings -->
+                            <div class="text-warning mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-muted small lh-lg mb-4">
+                                "Amazing service! Their staffing solutions and deep cleaning team transformed our space completely before an event. Very professional and detail-oriented approach."
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="rounded-circle bg-primary-custom text-warning fw-bold d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">AJ</div>
+                            <div>
+                                <h6 class="fw-bold text-primary-custom mb-0">Alice James</h6>
+                                <span class="text-warning small fw-semibold">Corporate Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Beautiful Light Watercolor Watermark Design Enquiry Form Section (Before Footer) -->
+    <section id="enquiry" class="light-watercolor-section py-5 position-relative overflow-hidden">
+        <div class="container py-5 position-relative z-2">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 scroll-reveal text-primary-custom">
+                    <span class="badge bg-primary-custom text-warning px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm">Get In Touch</span>
+                    <h2 class="fw-bold display-5 mb-4 text-primary-custom">Become a Distributor & Business Enquiry</h2>
+                    <p class="lead text-secondary mb-4 fs-6 fw-normal">
+                        Ready to expand your business horizons with AR Meridian? Fill out the details and our team will get back to you with custom solutions, distributorship offers, and wholesale packages tailored for national and international growth.
+                    </p>
+                    <div class="d-flex align-items-center gap-3 text-primary-custom fw-bold mb-4">
+                        <div class="bg-primary-custom text-warning p-3 rounded-circle shadow">
+                            <i class="fa-solid fa-phone-volume fs-4"></i>
+                        </div>
+                        <div>
+                            <span class="d-block text-muted small">Direct Helpline</span>
+                            <span class="fs-5 text-primary-custom">+91 7837793820</span>
+                        </div>
+                    </div>
+                    <div class="rounded-4 overflow-hidden shadow-lg border border-white">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Business Partnership" class="img-fluid w-100 object-fit-cover" style="height: 220px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 scroll-reveal">
+                    <div class="card border-0 shadow-lg p-4 p-md-5 rounded-4 bg-white bg-opacity-95 backdrop-blur border-top border-4 border-warning">
+                        <h3 class="fw-bold text-primary-custom mb-4 border-bottom pb-3">Business Enquiry Form</h3>
+                        
+                        <!-- EmailJS ke liye action hata diya gaya hai aur id di gayi hai -->
+                        <form id="enquiryForm">
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-secondary small">Your Name *</label>
+                                <input type="text" name="name" required class="form-control rounded-3 py-2 bg-light border-0" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-secondary small">Phone Number *</label>
+                                <input type="text" name="phone" required class="form-control rounded-3 py-2 bg-light border-0" placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-secondary small">Email Address</label>
+                                <input type="email" name="email" class="form-control rounded-3 py-2 bg-light border-0" placeholder="john@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-secondary small">Choose a Service / Enquiry Type</label>
+                                <select name="service" class="form-select rounded-3 py-2 bg-light border-0">
+                                    <option value="Residential Cleaning">Residential Cleaning</option>
+                                    <option value="Commercial Cleaning">Commercial Cleaning</option>
+                                    <option value="Staffing & Facility Management">Staffing & Facility Management</option>
+                                    <option value="Distributorship">Distributorship / Products Partnership</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold text-secondary small">Message *</label>
+                                <textarea name="message" rows="3" required class="form-control rounded-3 bg-light border-0" placeholder="Your requirements..."></textarea>
+                            </div>
+                            
+                            <!-- Submit Button with ID -->
+                            <button type="submit" id="enquirySubmitBtn" class="btn btn-warning text-dark w-100 fw-bold py-3 rounded-3 shadow-sm fs-6">Submit Enquiry Now</button>
+                            
+                            <!-- Response Message Div -->
+                            <div id="enquiryResponseMsg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Footer Section -->
+    <footer class="bg-primary-custom text-light pt-5 pb-3 border-top border-secondary">
+        <div class="container py-4">
+            <div class="row g-5 pb-4 border-bottom border-secondary">
+                <div class="col-lg-4">
+                    <!-- Logo Image -->
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="images/logo.png" alt="AR Meridian Logo" class="footer-logo" style="height: 65px; width: auto; object-fit: contain;">
+                    </a>
+                    <p class="text-light small lh-lg opacity-75 mb-3">
+                        Delivering premium cleaning products and reliable staffing solutions for businesses across India and worldwide.
+                    </p>
+                    <!-- Clickable & Styled Social Media Icons -->
+                    <div class="d-flex gap-2">
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-3 h6">Working Hours</h5>
+                    <p class="text-light small opacity-75 mb-3">
+                        <strong class="text-white">Mon-Sat:</strong> 09:00am - 7:00pm<br>
+                        <strong class="text-white">Sun:</strong> 11:00am - 6:00pm
+                    </p>
+                    <h5 class="text-white fw-bold mb-2 h6">Contact Us</h5>
+                    <p class="text-light small opacity-75 mb-0">
+                        <!-- Email Clickable -->
+                        <a href="mailto:armeridian4@gmail.com" class="text-decoration-none text-light d-block mb-1">
+                            <i class="fa-solid fa-envelope text-warning me-2"></i> armeridian4@gmail.com
+                        </a>
+                        <!-- Phone Clickable -->
+                        <a href="tel:+917837793820" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-phone text-warning me-2"></i> +91 7837793820
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-white fw-bold mb-3 h6">Address</h5>
+                    <p class="text-light small opacity-75 lh-lg mb-0">
+                        <!-- Address Clickable with Google Maps -->
+                        <a href="https://maps.google.com/?q=Silver+City+Complex,+Barara,+Ambala,+Haryana" target="_blank" class="text-decoration-none text-light">
+                            <i class="fa-solid fa-location-dot text-warning me-2"></i> Silver City Complex, Barara, Ambala, Haryana, India-133201
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 text-xs opacity-60">
+                <p class="mb-2 mb-sm-0">Copyright © 2026 AR Meridian. All rights reserved.</p>
+                <p class="mb-0">Powered by AR Meridian</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+</body>
+</html>
