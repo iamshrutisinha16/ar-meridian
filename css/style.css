@@ -11,6 +11,19 @@ body {
     overflow-x: hidden;
 }
 
+/* Website ko mobile par side se cut hone se rokne ke liye */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Sabhi images aur containers ko responsive banane ke liye */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
 .bg-primary-custom {
     background-color: var(--primary-color) !important;
 }
@@ -77,70 +90,83 @@ body {
 }
 
 /* Hero Section */
-/* Professional Cleaning Hero Section */
-.cleaning-hero {
+/* Full-Width Background Banner Hero */
+.full-banner-hero {
     position: relative;
-    min-height: 90vh;
-    background: linear-gradient(rgba(46, 99, 184, 0.75), rgba(11, 29, 58, 0.85)), 
-                url('/images/bannerimage.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 20px;
-    color: #ffffff;
-    text-align: left; /* Desktop par left aligned professional look ke liye */
+    width: 100%;
+    height: 520px; /* Banner ki height */
+    background-color: #071325;
+    overflow: hidden;
 }
 
-.cleaning-hero .hero-badge {
-    display: inline-block;
-    background: #ffc107;
-    color: #0b1d3a;
-    font-weight: 700;
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
+.full-banner-item {
+    position: relative;
+    width: 100%;
+    height: 520px;
 }
 
-.cleaning-hero h1 {
-    font-size: 3.2rem;
+.full-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Poore banner area ko evenly cover karega */
+    object-position: center;
+}
+
+/* Dark Gradient Overlay taaki text saaf dikhe */
+.banner-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(7, 19, 37, 0.90) 0%, rgba(7, 19, 37, 0.60) 50%, rgba(7, 19, 37, 0.20) 100%);
+}
+
+/* Banner Text Box */
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8%;
+    z-index: 10;
+    max-width: 650px;
+}
+
+.banner-caption h1 {
+    font-size: 2.8rem;
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    line-height: 1.25;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
-.cleaning-hero p {
-    font-size: 1.15rem;
+.banner-caption p {
+    font-size: 1.1rem;
     color: #e2e8f0;
-    margin-bottom: 30px;
     line-height: 1.6;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 
-/* Floating Feature Cards (Cleaning Business ke liye attractive touch) */
-.hero-feature-box {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-/* Mobile responsive adjustments */
+/* Mobile Responsive */
 @media (max-width: 991px) {
-    .cleaning-hero {
-        text-align: center; /* Mobile par sabhi text center align ho jayenge */
-        padding: 60px 15px;
-        min-height: auto;
+    .full-banner-hero, .full-banner-item {
+        height: 420px;
     }
-    .cleaning-hero h1 {
-        font-size: 2.2rem;
+    .banner-overlay {
+        background: rgba(7, 19, 37, 0.75);
     }
-    .cleaning-hero p {
-        font-size: 1rem;
+    .banner-caption {
+        left: 5%;
+        right: 5%;
+        max-width: 90%;
+        text-align: center;
+    }
+    .banner-caption h1 {
+        font-size: 2rem;
+    }
+    .banner-caption p {
+        font-size: 0.95rem;
     }
 }
 
@@ -208,10 +234,9 @@ body {
     transform: translateY(0);
 }
 
-/*aboutus*/
 .about-hero {
     min-height: 50vh;
-    background: linear-gradient(135deg, rgba(10, 25, 47, 0.95), rgba(95, 136, 233, 0.92)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(135deg, rgba(62, 128, 228, 0.4), rgba(7, 19, 37, 0.20)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
     background-position: center;
 }

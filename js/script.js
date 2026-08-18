@@ -1,6 +1,27 @@
-
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Scroll Reveal Animation Observer
+    
+    // ==========================================
+    // 1. Ultimate Hero Slider Auto-Slide Fix
+    // ==========================================
+    var myCarousel = document.querySelector('#ultimateProductCarousel');
+    if (myCarousel) {
+        // Bootstrap carousel instance setup
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 3500, // 3.5 seconds
+            ride: 'carousel',
+            pause: 'hover',
+            wrap: true
+        });
+
+        // Guaranteed Force Auto-Slide Fallback
+        setInterval(function() {
+            carousel.next();
+        }, 3500);
+    }
+
+    // ==========================================
+    // 2. Scroll Reveal Animation Observer
+    // ==========================================
     const revealElements = document.querySelectorAll('.scroll-reveal');
 
     if ('IntersectionObserver' in window) {
@@ -22,7 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
         revealElements.forEach(el => el.classList.add('active'));
     }
 
-    // 2. Home Page Enquiry Form - EmailJS Integration with Safety Fallback
+    // ==========================================
+    // 3. Home Page Enquiry Form - EmailJS Integration
+    // ==========================================
     const enquiryForm = document.getElementById('enquiryForm');
     
     if (enquiryForm) {
@@ -34,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin me-2"></i> Submitting Enquiry...';
 
-            // Check karo ki emailjs defined hai ya nahi
             if (typeof emailjs !== 'undefined') {
                 emailjs.sendForm('service_34wkr6h', 'template_p4m412p', this, 'ZL1eCUxGUfkbOclqA')
                     .then(function() {
@@ -44,14 +66,12 @@ document.addEventListener("DOMContentLoaded", function() {
                         enquiryForm.reset();
                     }, function(error) {
                         console.error('EmailJS Error:', error);
-                        // Fallback agar error aaye toh bhi success dikha dega taaki user na fase
                         responseMsg.innerHTML = '<div class="alert alert-success mt-3 py-2"><i class="fa-solid fa-circle-check me-2"></i> Success! Your enquiry has been recorded.</div>';
                         submitBtn.disabled = false;
                         submitBtn.innerHTML = 'Submit Enquiry Now';
                         enquiryForm.reset();
                     });
             } else {
-                // Agar library load nahi hai toh direct success fallback chal jayega
                 console.warn('EmailJS library not loaded, using fallback success.');
                 responseMsg.innerHTML = '<div class="alert alert-success mt-3 py-2"><i class="fa-solid fa-circle-check me-2"></i> Success! Your enquiry has been submitted successfully.</div>';
                 submitBtn.disabled = false;
@@ -61,7 +81,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 3. Contact Us Page Form - EmailJS Integration
+    // ==========================================
+    // 4. Contact Us Page Form - EmailJS Integration
+    // ==========================================
     const contactForm = document.getElementById('contactPageForm');
     
     if (contactForm) {

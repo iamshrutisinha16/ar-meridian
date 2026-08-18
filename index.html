@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- EmailJS CDN Script -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+<script src="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js)"></script>
 </head>
 <body>
 
@@ -25,8 +26,8 @@
 </a>
 
 <!-- Email Clickable -->
-<a href="mailto:armeridian4@gmail.com" class="text-decoration-none text-white">
-    <span><i class="fa-solid fa-envelope text-warning me-1"></i> armeridian4@gmail.com</span>
+<a href="mailto:info@armeridian.com" class="text-decoration-none text-white">
+    <span><i class="fa-solid fa-envelope text-warning me-1"></i> info@armeridian.com</span>
 </a>
             </div>
             <div class="text-warning fw-semibold">
@@ -67,66 +68,107 @@
 </div>
         </div>
     </nav>
-<!-- Professional Cleaning Hero Section -->
-<section class="cleaning-hero">
-    <div class="container">
-        <div class="row align-items-center g-5">
+  <!-- Full-Width Banner Carousel -->
+<section class="full-banner-hero">
+    <div id="ultimateProductCarousel" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-interval="3500">
+        
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
             
-            <!-- Left Side: Content & Actions -->
-            <div class="col-lg-7">
-                <span class="hero-badge">
-                    <i class="fa-solid fa-broom me-1"></i> Professional Cleaning & Hygiene Experts
-                </span>
-                
-                <h1>
-                    Sparkling Clean Spaces, <span class="text-warning">Trusted Hygiene Solutions</span>
-                </h1>
-                
-                <p>
-                    AR Meridian delivers top-tier commercial and residential cleaning services backed by our own premium range of cleaning products. From office spaces to complete facility management, we guarantee spotless excellence.
-                </p>
-                
-                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
-                    <a href="Commercialservices.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">
-                        Explore Services
-                    </a>
-                    <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
-                        <i class="fa-solid fa-phone text-warning"></i> +91 7837793820
-                    </a>
+            <!-- Slide 1: Cleaning Products -->
+            <div class="carousel-item active full-banner-item">
+                <img src="images/AR washing.jpeg" class="full-banner-img" alt="Cleaning Chemicals">
+                <div class="banner-overlay"></div>
+                <div class="banner-caption">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase shadow-sm">
+                        <i class="fa-solid fa-sparkles me-1"></i> Premium Range
+                    </span>
+                    <h1>High-Performance <span class="text-warning">Cleaning Products</span></h1>
+                    <p class="mb-4">Discover AR Meridian’s certified commercial and industrial cleaning formulations engineered for spotless hygiene.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="Commercialservices.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">Explore Products</a>
+                        <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone text-warning"></i> Call Now
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Right Side: Visual Cleaning Highlights (Collage/Grid Cards) -->
-            <div class="col-lg-5">
-                <div class="row g-3">
-                    <div class="col-6">
-                        <div class="hero-feature-box mb-3">
-                            <i class="fa-solid fa-wand-magic-sparkles text-warning fa-2x mb-2"></i>
-                            <h6 class="fw-bold mb-1">Deep Cleaning</h6>
-                            <small class="text-light opacity-75">Commercial & Residential</small>
-                        </div>
-                        <div class="hero-feature-box">
-                            <i class="fa-solid fa-box-open text-warning fa-2x mb-2"></i>
-                            <h6 class="fw-bold mb-1">Eco Products</h6>
-                            <small class="text-light opacity-75">High Quality Formula</small>
-                        </div>
+            <!-- Slide 2: Commercial Hygiene -->
+            <div class="carousel-item full-banner-item">
+                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=1600&auto=format&fit=crop" class="full-banner-img" alt="Commercial Hygiene">
+                <div class="banner-overlay"></div>
+                <div class="banner-caption">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase shadow-sm">
+                        <i class="fa-solid fa-shield-halved me-1"></i> Trusted Facility Care
+                    </span>
+                    <h1>Commercial & Residential <span class="text-warning">Hygiene Solutions</span></h1>
+                    <p class="mb-4">Reliable supply solutions tailored for corporate offices, commercial spaces, and residential complexes.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="Commercialservices.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">Our Services</a>
+                        <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone text-warning"></i> +91 7837793820
+                        </a>
                     </div>
-                    <div class="col-6 mt-4 mt-lg-5">
-                        <div class="hero-feature-box mb-3">
-                            <i class="fa-solid fa-shield-halved text-warning fa-2x mb-2"></i>
-                            <h6 class="fw-bold mb-1">Certified Quality</h6>
-                            <small class="text-light opacity-75">ISO & GMP Standard</small>
-                        </div>
-                        <div class="hero-feature-box">
-                            <i class="fa-solid fa-users-gear text-warning fa-2x mb-2"></i>
-                            <h6 class="fw-bold mb-1">Expert Staff</h6>
-                            <small class="text-light opacity-75">Reliable Solutions</small>
-                        </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Washing Powder (Aapka Product) -->
+            <div class="carousel-item full-banner-item">
+                <img src="images/AR wasgingpowderprimium.jpeg" class="full-banner-img" alt="AR Washing Powder">
+                <div class="banner-overlay"></div>
+                <div class="banner-caption">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase shadow-sm">
+                        <i class="fa-solid fa-shirt me-1"></i> Laundry Care
+                    </span>
+                    <h1>Powerful Stain Removal & <span class="text-warning">Washing Powder</span></h1>
+                    <p class="mb-4">Experience superior fabric care with AR Premium Washing Powder, formulated to tackle tough stains and keep clothes bright.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="Commercialservices.html" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">View Range</a>
+                        <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone text-warning"></i> Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Expert Cleaning -->
+            <div class="carousel-item full-banner-item">
+                <img src="images/kitchencleaning.jpg" class="full-banner-img" alt="Expert Cleaning">
+                <div class="banner-overlay"></div>
+                <div class="banner-caption">
+                    <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 text-uppercase shadow-sm">
+                        <i class="fa-solid fa-users-gear me-1"></i> Professional Experts
+                    </span>
+                    <h1>Expert Deep Cleaning & <span class="text-warning">Staffing Solutions</span></h1>
+                    <p class="mb-4">Backed by ISO & GMP certifications, we provide comprehensive facility management and top-tier expertise.</p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#enquiry" class="btn btn-warning btn-lg fw-bold text-dark px-4 py-3 shadow">Become a Distributor</a>
+                        <a href="tel:+917837793820" class="btn btn-outline-light btn-lg fw-bold px-4 py-3 d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone text-warning"></i> Call Now
+                        </a>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 shadow" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3 shadow" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </section>
     <!-- About Section with Side Image -->
@@ -216,11 +258,11 @@
                 
                 <!-- Card 1 -->
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative" style="height: 240px;">
-                        <img src="images/AR washing.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: fill;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">01.</div>
+                    <div class="position-relative overflow-hidden" style="height: 240px;">
+                        <img src="images/AR washing.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">01.</div>
                     </div>
-                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
                             <h3 class="fw-bold text-primary-custom h5 mb-2">AR Advanced Washing Powder</h3>
                             <p class="text-muted small lh-base mb-0">
@@ -235,11 +277,11 @@
 
                 <!-- Card 2 -->
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative" style="height: 240px;">
-                        <img src="images/AR Shine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: fill;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">02.</div>
+                    <div class="position-relative overflow-hidden" style="height: 240px;">
+                        <img src="images/AR Shine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">02.</div>
                     </div>
-                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
                             <h3 class="fw-bold text-primary-custom h5 mb-2">AR Fresh & Shine Guard</h3>
                             <p class="text-muted small lh-base mb-0">
@@ -254,11 +296,11 @@
 
                 <!-- Card 3 -->
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative" style="height: 240px;">
-                        <img src="images/satify.png" alt="Staffing & Facility Management" class="w-100 h-100" style="object-fit: fill;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">03.</div>
+                    <div class="position-relative overflow-hidden" style="height: 240px;">
+                        <img src="https://i.pinimg.com/1200x/66/cb/de/66cbde14990d3fff67ebd2aae6c12f7b.jpg" alt="Staffing & Facility Management" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">03.</div>
                     </div>
-                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
                             <h3 class="fw-bold text-primary-custom h5 mb-2">Smart Facility & Staffing</h3>
                             <p class="text-muted small lh-base mb-0">
@@ -273,11 +315,11 @@
 
                 <!-- Duplicate Cards for Seamless Infinite Loop -->
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative" style="height: 240px;">
-                        <img src="images/AR wasgingpowderprimium.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: fill;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">01.</div>
+                    <div class="position-relative overflow-hidden" style="height: 240px;">
+                        <img src="images/AR wasgingpowderprimium.jpeg" alt="AR Washing Powder" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">01.</div>
                     </div>
-                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
                             <h3 class="fw-bold text-primary-custom h5 mb-2">AR Advanced Washing Powder</h3>
                             <p class="text-muted small lh-base mb-0">
@@ -291,11 +333,11 @@
                 </div>
 
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative" style="height: 240px;">
-                        <img src="images/AR freshshine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: fill;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow">02.</div>
+                    <div class="position-relative overflow-hidden" style="height: 240px;">
+                        <img src="images/AR freshshine.jpeg" alt="AR Fresh & AR Shine" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">02.</div>
                     </div>
-                    <div class="p-4 d-flex flex-column justify-content-between" style="height: 260px;">
+                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
                             <h3 class="fw-bold text-primary-custom h5 mb-2">AR Fresh & Shine Guard</h3>
                             <p class="text-muted small lh-base mb-0">
@@ -348,7 +390,7 @@
                             <i class="fa-solid fa-award"></i>
                         </div>
                         <h4 class="fw-bold text-primary-custom h5 mb-2">Premium Quality Products</h4>
-                        <p class="text-muted small">Engineered with international hygiene and safety standards for maximum effectiveness.</p>
+<p class="text-muted small">Delivering ultimate cleanliness and trusted hygiene protection for everyday needs.</p>
                     </div>
                 </div>
                 <div class="col-md-4 scroll-reveal">
@@ -562,8 +604,8 @@
                     <h5 class="text-white fw-bold mb-2 h6">Contact Us</h5>
                     <p class="text-light small opacity-75 mb-0">
                         <!-- Email Clickable -->
-                        <a href="mailto:armeridian4@gmail.com" class="text-decoration-none text-light d-block mb-1">
-                            <i class="fa-solid fa-envelope text-warning me-2"></i> armeridian4@gmail.com
+                        <a href="mailto:info@armeridian.com" class="text-decoration-none text-light d-block mb-1">
+                            <i class="fa-solid fa-envelope text-warning me-2"></i> info@armeridian.com
                         </a>
                         <!-- Phone Clickable -->
                         <a href="tel:+917837793820" class="text-decoration-none text-light">
