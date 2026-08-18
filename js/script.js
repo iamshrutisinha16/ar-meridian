@@ -43,6 +43,17 @@ document.addEventListener("DOMContentLoaded", function() {
         revealElements.forEach(el => el.classList.add('active'));
     }
 
+     // Function when user clicks any bento card
+function updatePreview(index) {
+    const messages = [
+        "Primary Showcase selected: AR Premium Washing Powder",
+        "Surface Care category selected: Disinfection & Shine",
+        "Bulk Supply category selected: Commercial Production"
+    ];
+    console.log(messages[index]);
+    // Yahan aap chahe toh click hone par koi modal ya specific content bhi open kar sakte hain.
+}
+
     // ==========================================
     // 3. Home Page Enquiry Form - EmailJS Integration
     // ==========================================

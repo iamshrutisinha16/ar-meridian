@@ -10,13 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- EmailJS CDN Script -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
-<script src="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js)"></script>
+    <!-- EmailJS Browser SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-<!-- Top Contact Bar (100% Mobile Responsive) -->
 <div class="top-bar text-white py-2 px-3">
     <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start gap-2">
         
@@ -45,7 +43,7 @@
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
     <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
-</a>
+        </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,144 +71,170 @@
 </div>
         </div>
     </nav>
- 
-    <!-- Full-Width Banner Carousel -->
-<section class="full-banner-hero">
-    <div id="ultimateProductCarousel" class="carousel slide carousel-fade shadow" data-bs-ride="carousel" data-bs-interval="3500">
-        
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide-to="3"></button>
+ <!-- AR Meridian Video Hero / Banner Section (Optimized Height, Light Overlay & Fully Responsive) -->
+<section class="hero-video-section position-relative overflow-hidden text-white" style="min-height: 580px; height: 75vh; display: flex; align-items: center;">
+    
+    <!-- Background Video Element -->
+    <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index: 0; filter: brightness(0.95);">
+        <source src="videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Very Soft & Light Gradient Overlay (Taaki video saaf-saaf dikhe aur text bhi readable ho) -->
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, rgba(15,23,42,0.8) 0%, rgba(15,23,42,0.5) 55%, rgba(15,23,42,0.2) 100%); z-index: 1;"></div>
+
+    <!-- Content Container -->
+    <div class="container position-relative py-4 my-auto" style="z-index: 2;">
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-xl-7">
+                
+                <!-- Top Badge -->
+                <span class="badge bg-warning text-dark fw-bold px-3 py-1.5 rounded-pill mb-2 text-uppercase tracking-wider fs-7">
+                    <i class="fa-solid fa-handshake me-1"></i> AR Meridian Partnership
+                </span>
+
+                <!-- Main Heading (Optimized Size) -->
+                <h1 class="fw-bold text-white mb-2" style="font-size: clamp(1.8rem, 3.5vw, 2.8rem); line-height: 1.2;">
+                    Premium Cleaning Products & Business Network
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-light mb-3 fs-6 lh-base" style="max-width: 600px;">
+                    Empowering distributors with advanced active enzyme washing powders and surface disinfection liquids.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <a href="contact.html" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow fs-7">
+                        Get In Touch <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                    <a href="Commercialservices.html" class="btn btn-outline-light fw-bold px-4 py-2 rounded-pill fs-7">
+                        Explore Solutions
+                    </a>
+                </div>
+
+                <!-- Footer Feature Highlights (Responsive flex layout) -->
+                <div class="row pt-3 border-top border-light border-opacity-25 text-light fs-7 g-2 g-md-3">
+                    <div class="col-sm-auto d-flex align-items-center">
+                        <i class="fa-solid fa-check-circle text-warning me-1.5"></i> Active Enzyme Formulations
+                    </div>
+                    <div class="col-sm-auto d-flex align-items-center">
+                        <i class="fa-solid fa-check-circle text-warning me-1.5"></i> High-Margin Distributorship
+                    </div>
+                    <div class="col-sm-auto d-flex align-items-center">
+                        <i class="fa-solid fa-check-circle text-warning me-1.5"></i> Bulk Commercial Supply
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="carousel-inner">
-            
-            <!-- Slide 1: Cleaning Products -->
-            <div class="carousel-item active full-banner-item">
-                <img src="images/AR washing.jpeg" class="full-banner-img" alt="Cleaning Chemicals">
-                <div class="banner-overlay"></div>
-                <div class="banner-caption container">
-                    <div class="max-w-800">
-                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase shadow-sm">
-                            <i class="fa-solid fa-sparkles me-1"></i> Premium Range
-                        </span>
-                        <h1 class="banner-title">High-Performance <span class="text-warning">Cleaning Products</span></h1>
-                        <p class="banner-desc mb-4">Discover AR Meridian’s certified commercial and industrial cleaning formulations engineered for spotless hygiene.</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                            <a href="Commercialservices.html" class="btn btn-warning btn-md-lg fw-bold text-dark px-4 py-2 py-md-3 shadow">Explore Products</a>
-                            <a href="tel:+917837793820" class="btn btn-outline-light btn-md-lg fw-bold px-4 py-2 py-md-3 d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-phone text-warning"></i> Call Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2: Commercial Hygiene -->
-            <div class="carousel-item full-banner-item">
-                <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=1600&auto=format&fit=crop" class="full-banner-img" alt="Commercial Hygiene">
-                <div class="banner-overlay"></div>
-                <div class="banner-caption container">
-                    <div class="max-w-800">
-                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase shadow-sm">
-                            <i class="fa-solid fa-shield-halved me-1"></i> Trusted Facility Care
-                        </span>
-                        <h1 class="banner-title">Commercial & Residential <span class="text-warning">Hygiene Solutions</span></h1>
-                        <p class="banner-desc mb-4">Reliable supply solutions tailored for corporate offices, commercial spaces, and residential complexes.</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                            <a href="Commercialservices.html" class="btn btn-warning btn-md-lg fw-bold text-dark px-4 py-2 py-md-3 shadow">Our Services</a>
-                            <a href="tel:+917837793820" class="btn btn-outline-light btn-md-lg fw-bold px-4 py-2 py-md-3 d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-phone text-warning"></i> +91 7837793820
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3: Washing Powder -->
-            <div class="carousel-item full-banner-item">
-                <img src="images/AR wasgingpowderprimium.jpeg" class="full-banner-img" alt="AR Washing Powder">
-                <div class="banner-overlay"></div>
-                <div class="banner-caption container">
-                    <div class="max-w-800">
-                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase shadow-sm">
-                            <i class="fa-solid fa-shirt me-1"></i> Laundry Care
-                        </span>
-                        <h1 class="banner-title">Powerful Stain Removal & <span class="text-warning">Washing Powder</span></h1>
-                        <p class="banner-desc mb-4">Experience superior fabric care with AR Premium Washing Powder, formulated to tackle tough stains and keep clothes bright.</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                            <a href="Commercialservices.html" class="btn btn-warning btn-md-lg fw-bold text-dark px-4 py-2 py-md-3 shadow">View Range</a>
-                            <a href="tel:+917837793820" class="btn btn-outline-light btn-md-lg fw-bold px-4 py-2 py-md-3 d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-phone text-warning"></i> Contact Us
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4: Expert Cleaning -->
-            <div class="carousel-item full-banner-item">
-                <img src="images/kitchencleaning.jpg" class="full-banner-img" alt="Expert Cleaning">
-                <div class="banner-overlay"></div>
-                <div class="banner-caption container">
-                    <div class="max-w-800">
-                        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-2 text-uppercase shadow-sm">
-                            <i class="fa-solid fa-users-gear me-1"></i> Professional Experts
-                        </span>
-                        <h1 class="banner-title">Expert Deep Cleaning & <span class="text-warning">Staffing Solutions</span></h1>
-                        <p class="banner-desc mb-4">Backed by ISO & GMP certifications, we provide comprehensive facility management and top-tier expertise.</p>
-                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                            <a href="#enquiry" class="btn btn-warning btn-md-lg fw-bold text-dark px-4 py-2 py-md-3 shadow">Become a Distributor</a>
-                            <a href="tel:+917837793820" class="btn btn-outline-light btn-md-lg fw-bold px-4 py-2 py-md-3 d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-phone text-warning"></i> Call Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3 shadow" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#ultimateProductCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark rounded-circle p-3 shadow" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 </section>
-    <!-- About Section with Side Image -->
-    <section id="about" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6 scroll-reveal">
-                    <span class="text-warning fw-bold text-uppercase tracking-wider small">About AR Meridian</span>
-                    <h2 class="fw-bold text-primary-custom display-6 mb-4 mt-2">
-                        Your Trusted Partner for Cleaning Products & Staffing Solutions
-                    </h2>
-                    <p class="text-muted mb-4 lh-lg">
-                        AR Meridian is committed to delivering high-quality cleaning products and reliable workforce solutions. We manufacture premium cleaning products under our trusted brands and provide comprehensive staffing and facility management services to businesses across India and international markets. Our ultimate focus is on maintaining exceptional quality, complete operational reliability, and establishing long-term, trustworthy business partnerships with all our valued clients and distributors worldwide.
-                    </p>
-                    <a href="contact.html" class="btn btn-primary-custom text-white fw-bold px-4 py-3 rounded-3 shadow-sm">Know More About Us</a>
+   <!-- About Section: Clean Left Content & Right Single Product/Manufacturing Image -->
+<section id="about" class="py-5 bg-white overflow-hidden">
+    <div class="container py-4">
+        
+        <!-- Main Top Row: Left Content & Right Side Single Image -->
+        <div class="row align-items-center g-5 mb-5">
+            
+            <!-- Left Column: Content -->
+            <div class="col-lg-6 scroll-reveal">
+                <span class="text-warning fw-bold text-uppercase tracking-wider small bg-warning-subtle px-3 py-1 rounded-pill">About AR Meridian</span>
+                <h2 class="fw-bold text-primary-custom display-6 mb-4 mt-2">
+                    Your Trusted Partner for Cleaning Products & Staffing Solutions
+                </h2>
+                <p class="text-muted mb-4 lh-lg">
+                    AR Meridian is committed to delivering high-quality cleaning products and reliable workforce solutions. We manufacture premium cleaning formulations under our trusted brands and provide comprehensive facility management and staffing services to businesses across India and international markets.
+                </p>
+                <p class="text-muted mb-4 lh-lg">
+                    Our ultimate focus is on maintaining exceptional quality, complete operational reliability, and establishing long-term, trustworthy business partnerships with all our valued clients and distributors worldwide.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="contact.html" class="btn btn-warning text-dark fw-bold px-4 py-3 rounded-pill shadow-sm transition-hover">Know More About Us</a>
+                    <a href="Commercialservices.html" class="btn btn-outline-dark fw-bold px-4 py-3 rounded-pill">Explore Products</a>
                 </div>
-                <div class="col-lg-6 scroll-reveal">
-                    <div class="position-relative">
-                        <img src="images/aboutus.avif" alt="About AR Meridian" class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 400px;">
-                        <div class="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded-3 shadow border-start border-4 border-warning">
-                            <span class="d-block fw-bold text-primary-custom">Trusted Quality</span>
-                            <span class="text-muted small">Domestic & International Markets</span>
-                        </div>
+            </div>
+
+            <!-- Right Column: Single Professional Product / Manufacturing Image with Hover Animation -->
+            <div class="col-lg-6 scroll-reveal">
+                <div class="position-relative overflow-hidden rounded-4 shadow-lg group" style="min-height: 420px;">
+                    <!-- Aap yahan apni koi bhi main product image ya factory image ka path de sakte hain -->
+                    <img src="images/ar.jpeg" alt="AR Meridian Products" class="w-100 h-100 object-fit-cover transition-transform duration-500 hover-scale" style="min-height: 420px;">
+                    
+                    <!-- Floating Badge on Image -->
+                    <div class="position-absolute bottom-0 start-0 m-4 bg-white p-3 rounded-3 shadow border-start border-4 border-warning">
+                        <span class="d-block fw-bold text-primary-custom">100% Quality Assured</span>
+                        <span class="text-muted small">Domestic & International Standards</span>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+
+        <!-- 4 Stylish Feature Boxes Below -->
+        <div class="row g-4 mt-4">
+            
+            <!-- Box 1 -->
+            <div class="col-md-6 col-lg-3 scroll-reveal">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-light transition-hover hover-shadow border-bottom border-4 border-warning">
+                    <div class="mb-3 text-warning fs-3">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4 class="h5 fw-bold text-primary-custom mb-2">Premium Quality</h4>
+                    <p class="text-muted small mb-0 lh-base">Formulated with active enzyme technologies for superior cleaning and stain removal.</p>
+                </div>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="col-md-6 col-lg-3 scroll-reveal">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-light transition-hover hover-shadow border-bottom border-4 border-primary">
+                    <div class="mb-3 text-primary fs-3">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h4 class="h5 fw-bold text-primary-custom mb-2">Bulk Distribution</h4>
+                    <p class="text-muted small mb-0 lh-base">Reliable supply chains connecting nationwide partners and international markets.</p>
+                </div>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="col-md-6 col-lg-3 scroll-reveal">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-light transition-hover hover-shadow border-bottom border-4 border-warning">
+                    <div class="mb-3 text-warning fs-3">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4 class="h5 fw-bold text-primary-custom mb-2">Expert Staffing</h4>
+                    <p class="text-muted small mb-0 lh-base">Comprehensive facility management and professional workforce solutions.</p>
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="col-md-6 col-lg-3 scroll-reveal">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100 bg-light transition-hover hover-shadow border-bottom border-4 border-primary">
+                    <div class="mb-3 text-primary fs-3">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="h5 fw-bold text-primary-custom mb-2">Trusted Partner</h4>
+                    <p class="text-muted small mb-0 lh-base">Building long-term transparent relationships with distributors and enterprises.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Custom CSS for Hover Animation -->
+<style>
+    .transition-hover {
+        transition: all 0.3s ease-in-out;
+    }
+    .transition-hover:hover {
+        transform: translateY(-5px);
+    }
+    .hover-scale:hover {
+        transform: scale(1.05);
+    }
+</style>
 
     <!-- Certification Bar (Animated Activity) -->
 <section class="bg-primary-custom text-white py-5 text-center">
@@ -308,24 +332,24 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
-                    <div class="position-relative overflow-hidden" style="height: 240px;">
-                        <img src="https://i.pinimg.com/1200x/66/cb/de/66cbde14990d3fff67ebd2aae6c12f7b.jpg" alt="Staffing & Facility Management" class="w-100 h-100" style="object-fit: cover; object-position: center;">
-                        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">03.</div>
-                    </div>
-                    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
-                        <div>
-                            <h3 class="fw-bold text-primary-custom h5 mb-2">Smart Facility & Staffing</h3>
-                            <p class="text-muted small lh-base mb-0">
-                                Empower your enterprise with specialized workforce deployment and comprehensive property maintenance, ensuring seamless corporate execution and absolute operational excellence.
-                            </p>
-                        </div>
-                        <a href="contact.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
-                            Book Service <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+<div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
+    <div class="position-relative overflow-hidden" style="height: 240px;">
+        <!-- Yahan apni website wali local product image ka path daal dein -->
+        <img src="https://armeridian.com/wp-content/uploads/2026/07/1778559056014-1-1.jpg" alt="Smart Business & Supply" class="w-100 h-100" style="object-fit: contain; object-position: center; background-color: #ffffff;">
+        <div class="position-absolute top-0 start-0 m-3 bg-primary-custom text-warning fw-black fs-5 px-3 py-2 rounded-3 shadow z-index-2">03.</div>
+    </div>
+    <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
+        <div>
+            <h3 class="fw-bold text-primary-custom h5 mb-2">Smart Business & Supply</h3>
+            <p class="text-muted small lh-base mb-0">
+                Empower your enterprise with bulk product manufacturing, commercial distribution channels, and high-margin smart business opportunities.
+            </p>
+        </div>
+        <a href="Commercialservices.html" class="text-warning fw-bold text-decoration-none d-inline-flex align-items-center gap-2 mt-2 small">
+            Book Service <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
 
                 <!-- Duplicate Cards for Seamless Infinite Loop -->
                 <div class="card border-0 shadow-lg rounded-4 overflow-hidden flex-shrink-0" style="width: 380px;">
@@ -335,7 +359,7 @@
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between bg-white" style="height: 260px;">
                         <div>
-                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Advanced Washing Powder</h3>
+                            <h3 class="fw-bold text-primary-custom h5 mb-2">AR Washing Powder</h3>
                             <p class="text-muted small lh-base mb-0">
                                 Experience ultimate fabric care with our next-gen active enzyme formula. It breaks down toughest grease and dirt instantly, preserving vibrant colors and delivering long-lasting freshness to every single thread.
                             </p>
@@ -428,8 +452,57 @@
             </div>
         </div>
     </section>
+ <!-- AR Meridian Full-Width Product Supply Section (Perfect Visibility & Alignment) -->
+<section class="w-100 overflow-hidden py-0">
+    <div class="container-fluid px-0">
+        
+        <!-- Main Full-Width Banner Box -->
+        <div class="position-relative shadow-lg w-100" style="min-height: 650px; display: flex; align-items: center;">
+            
+            <!-- Background Image: Shifted to right so products remain fully visible -->
+            <img src="https://media.istockphoto.com/id/1486607071/photo/empty-grocery-cart-in-an-empty-supermarket-shopping-in-supermarket.jpg?s=1024x1024&w=is&k=20&c=v4CaWNX0TwIsxU1CDTUKcaGXye8y_3oKDqmaWW2_G9Y=" alt="AR Meridian Products Supply" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="z-index: 0; object-position: 80% center;">
+            
+            <!-- Smooth Gradient Overlay on Left for Professional Contrast & Product Clarity on Right -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; background: linear-gradient(90deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.90) 45%, rgba(15, 23, 42, 0.35) 75%, transparent 100%);"></div>
 
-    
+            <!-- Content Box on Left Side with Safe Spacing -->
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6 py-5">
+                        
+                        <div class="p-4 p-md-5 rounded-4 shadow-lg text-white" style="background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border-left: 5px solid #ffc107;">
+                            
+                            <span class="text-warning fw-bold text-uppercase tracking-wider small d-block mb-2">
+                                <i class="fa-solid fa-sparkles me-1"></i> AR Meridian Manufacturing
+                            </span>
+
+                            <h2 class="fw-bold display-6 mb-3 text-white" style="line-height: 1.25;">
+                                High-Performance Washing Powders & Cleaning Solutions
+                            </h2>
+
+                            <p class="text-light fs-6 lh-base mb-4">
+                                At AR Meridian, we formulate and manufacture top-quality washing powders, floor cleaners, and heavy-duty liquid detergents. Designed for superior stain removal and long-lasting freshness, our products are built to support nationwide distributors and commercial partners with reliable bulk availability.
+                            </p>
+
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="Commercialservices.html" class="btn btn-warning fw-bold text-dark px-4 py-2.5 rounded-pill shadow-sm">
+                                    <i class="fa-solid fa-box-open me-1"></i> View Our Products
+                                </a>
+                                <a href="contact.html" class="btn btn-outline-light fw-bold px-4 py-2.5 rounded-pill">
+                                    Partner With Us
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
     <!-- Testimonials Section -->
     <section class="py-5 bg-light">
         <div class="container py-4">
@@ -520,7 +593,109 @@
             </div>
         </div>
     </section>
-    <!-- Beautiful Light Watercolor Watermark Design Enquiry Form Section (Before Footer) -->
+   <!-- Bento Grid / Maersk Style Insights & Showcase Section -->
+<section class="py-5 bg-white overflow-hidden">
+    <div class="container py-4">
+        
+        <!-- Section Header -->
+        <div class="mb-5">
+            <span class="text-warning fw-bold text-uppercase tracking-wider small bg-warning-subtle px-3 py-1 rounded-pill">
+                <i class="fa-solid fa-lightbulb me-1"></i> Featured Insights & Gallery
+            </span>
+            <h2 class="fw-bold text-primary-custom display-6 mb-2 mt-2">
+                Discover AR Meridian in Action
+            </h2>
+            <p class="text-muted">
+                Explore our manufacturing capabilities, quality standards, and customer trust through our visual highlights. Click any card to preview.
+            </p>
+        </div>
+
+        <!-- Bento Grid Layout: 1 Big Image on Left, Stacked Images on Right -->
+        <div class="row g-4">
+            
+            <!-- Left Big Featured Card -->
+            <div class="col-lg-7">
+                <div class="bento-card big-card position-relative rounded-4 overflow-hidden shadow-lg h-100 cursor-pointer" onclick="updatePreview(0)" style="min-height: 450px;">
+                    <img src="images/AR wasgingpowderprimium.jpeg" alt="Big Featured Image" class="w-100 h-100 object-fit-cover card-img">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 card-gradient"></div>
+                    <div class="position-absolute bottom-0 start-0 w-100 p-4 p-md-5 text-white z-2">
+                        <span class="badge bg-warning text-dark fw-bold mb-2 px-3 py-1 rounded-pill">Primary Showcase</span>
+                        <h3 class="h3 fw-bold text-white mb-2">AR Premium Washing Powder Manufacturing</h3>
+                        <p class="text-light small mb-0 lh-base">Engineered with active enzyme technology for superior deep cleaning and long-lasting fabric freshness.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Stacked Cards Column -->
+            <div class="col-lg-5 d-flex flex-column gap-4">
+                
+                <!-- Small Stack Card 1 -->
+                <div class="bento-card small-card position-relative rounded-4 overflow-hidden shadow-sm cursor-pointer" onclick="updatePreview(1)" style="height: 210px;">
+                    <img src="images/AR washing.jpeg" alt="Surface Care" class="w-100 h-100 object-fit-cover card-img">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 card-gradient"></div>
+                    <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white z-2">
+                        <span class="badge bg-warning text-dark fw-bold mb-1 px-2 py-0.5 small">Surface Care</span>
+                        <h4 class="h6 fw-bold text-white mb-1">Disinfection & Shine Liquids</h4>
+                        <p class="text-light small mb-0 text-truncate">High-performance multi-purpose cleaners for absolute hygiene.</p>
+                    </div>
+                </div>
+                 
+                <!-- Small Stack Card 2 -->
+                <div class="bento-card small-card position-relative rounded-4 overflow-hidden shadow-sm cursor-pointer" onclick="updatePreview(2)" style="height: 210px;">
+                    <img src="images/polishing.jpg" alt="Bulk Manufacturing" class="w-100 h-100 object-fit-cover card-img">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 card-gradient"></div>
+                    <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white z-2">
+                        <span class="badge bg-warning text-dark fw-bold mb-1 px-2 py-0.5 small">Bulk Supply</span>
+                        <h4 class="h6 fw-bold text-white mb-1">Commercial Production & Packaging</h4>
+                        <p class="text-light small mb-0 text-truncate">State-of-the-art facilities ensuring continuous nationwide supply.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- AR Meridian Products & Business Excellence Section (Fixed Image Display) -->
+<section class="py-5 bg-light overflow-hidden">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            
+            <!-- Left Column: Heading & Content -->
+            <div class="col-lg-6">
+                <span class="badge bg-warning text-dark fw-bold px-3 py-1 rounded-pill mb-3 text-uppercase tracking-wider">
+                    <i class="fa-solid fa-star me-1"></i> Quality & Business Growth
+                </span>
+                
+                <h2 class="fw-bold display-6 text-dark mb-3 lh-tight">
+                    Turning Premium Formulations into Business Success
+                </h2>
+                
+                <p class="text-muted mb-4 lh-base">
+                    Quality is no longer optional in the cleaning and FMCG sector, where high standards and consumer trust mean delivering superior active enzyme washing powders and surface care liquids that stand out in the market.
+                </p>
+                
+                <p class="text-muted mb-4 lh-base small">
+                    Our exclusive manufacturing standards ensure that distributors and business partners not only provide top-tier products to households but also build smarter businesses and transform market reach into a competitive edge.
+                </p>
+
+                <a href="Commercialservices.html" class="btn btn-dark fw-bold px-4 py-2.5 rounded-pill shadow-sm">
+                    Explore Our Range <i class="fa-solid fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+
+            <!-- Right Column: Simple & Fixed Image Display -->
+            <div class="col-lg-6">
+                <div class="rounded-4 overflow-hidden shadow-lg bg-white" style="height: 400px;">
+                    <img src="images/AR washing.jpeg" alt="AR Meridian Products & Manufacturing" class="w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     <section id="enquiry" class="light-watercolor-section py-5 position-relative overflow-hidden">
         <div class="container py-5 position-relative z-2">
             <div class="row align-items-center g-5">
