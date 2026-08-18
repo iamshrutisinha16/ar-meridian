@@ -11,14 +11,12 @@ body {
     overflow-x: hidden;
 }
 
-/* Website ko mobile par side se cut hone se rokne ke liye */
 html, body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-/* Sabhi images aur containers ko responsive banane ke liye */
 img, video, iframe {
     max-width: 100%;
     height: auto;
@@ -41,10 +39,27 @@ img, video, iframe {
 }
 
 .top-bar {
-    background-color: #060e1a;
+    background-color: #0b1329; 
     font-size: 0.85rem;
 }
 
+@media (max-width: 768px) {
+    .top-bar {
+        font-size: 0.72rem; 
+        padding-top: 6px !important;
+        padding-bottom: 6px !important;
+    }
+    
+    .top-bar .container {
+        gap: 4px !important;
+    }
+
+    /* Mobile par phone aur email ko ek ke niche ek ya proper gap mein set karne ke liye */
+    .top-contact-info {
+        flex-direction: column;
+        gap: 2px !important;
+    }
+}
 .navbar {
     background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
@@ -90,83 +105,78 @@ img, video, iframe {
 }
 
 /* Hero Section */
-/* Full-Width Background Banner Hero */
+/* Banner Main Styling */
 .full-banner-hero {
     position: relative;
     width: 100%;
-    height: 520px; /* Banner ki height */
-    background-color: #071325;
-    overflow: hidden;
 }
 
 .full-banner-item {
+    height: 85vh;
+    min-height: 500px;
     position: relative;
-    width: 100%;
-    height: 520px;
 }
 
 .full-banner-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Poore banner area ko evenly cover karega */
+    object-fit: cover;
     object-position: center;
 }
 
-/* Dark Gradient Overlay taaki text saaf dikhe */
 .banner-overlay {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(7, 19, 37, 0.90) 0%, rgba(7, 19, 37, 0.60) 50%, rgba(7, 19, 37, 0.20) 100%);
+    background: linear-gradient(135deg, rgba(7, 19, 37, 0.85), rgba(7, 19, 37, 0.60));
 }
 
-/* Banner Text Box */
 .banner-caption {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: 8%;
-    z-index: 10;
-    max-width: 650px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 3;
+    text-align: center;
 }
 
-.banner-caption h1 {
-    font-size: 2.8rem;
-    font-weight: 800;
-    line-height: 1.25;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-}
-
-.banner-caption p {
-    font-size: 1.1rem;
-    color: #e2e8f0;
-    line-height: 1.6;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-}
-
-/* Mobile Responsive */
-@media (max-width: 991px) {
-    .full-banner-hero, .full-banner-item {
-        height: 420px;
-    }
-    .banner-overlay {
-        background: rgba(7, 19, 37, 0.75);
-    }
+@media (min-width: 992px) {
     .banner-caption {
-        left: 5%;
-        right: 5%;
-        max-width: 90%;
-        text-align: center;
+        text-align: left;
+        left: 10%;
+        transform: translateY(-50%);
     }
-    .banner-caption h1 {
-        font-size: 2rem;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+/* Responsive Headings & Text to prevent overlapping */
+.banner-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.banner-desc {
+    font-size: 1rem;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+/* Desktop par font size bada ho jayega */
+@media (min-width: 992px) {
+    .banner-title {
+        font-size: 3.5rem;
     }
-    .banner-caption p {
-        font-size: 0.95rem;
+    .banner-desc {
+        font-size: 1.15rem;
     }
 }
 
