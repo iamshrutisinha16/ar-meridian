@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- EmailJS CDN Script -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+    <!-- EmailJS Browser SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-
-<!-- Top Contact Bar (100% Mobile Responsive) -->
 <div class="top-bar text-white py-2 px-3">
     <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start gap-2">
         
@@ -40,11 +39,11 @@
     </div>
 </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-    <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
-</a>
+                <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
+            </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,45 +52,54 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Services
-    </a>
-    <ul class="dropdown-menu shadow-lg border-0 rounded-3 py-2 animate-dropdown" aria-labelledby="servicesDropdown">
-        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Commercialservices.html">Commercial Service</a></li>
-        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Residentialcleaning.html">Residential Service</a></li>
-    </ul>
-</li>
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 py-2 animate-dropdown" aria-labelledby="servicesDropdown">
+                            <!-- Our Services & Requirement Based Services Dropdown -->
+                            <li>
+                                <a class="dropdown-item py-2 px-3 fw-bold text-dark border-bottom border-light" href="Commercialservices.html">
+                                    <i class="fa-solid fa-briefcase me-2 text-warning"></i> Our Services
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Residentialcleaning.html">
+                                    <i class="fa-solid fa-clipboard-check me-2 text-warning"></i> Required Services
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <!-- Updated Distributor Button for Direct Call -->
-<div class="d-none d-lg-block">
-    <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
-        <i class="fa-solid fa-phone me-2"></i> Call Now
-    </a>
-</div>
+            <div class="d-none d-lg-block">
+                <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
+                    <i class="fa-solid fa-phone me-2"></i> Call Now
+                </a>
+            </div>
         </div>
     </nav>
-
-
-<!-- 1. Modern Split Banner Section -->
+<!-- ========================================== -->
+<!-- SECTION 1: HOME & HOUSEHOLD SOLUTIONS BANNER -->
+<!-- ========================================== -->
 <section class="py-5 overflow-hidden text-white" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
-                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3">Home Care Solutions</span>
-                <h1 class="display-5 fw-bold mb-3 lh-tight">Professional Residential Cleaning & Hygiene</h1>
+                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3 shadow-sm">Household Solutions</span>
+                <h1 class="display-5 fw-bold mb-3 lh-tight">Complete Home Support, General Staffing & Facility Management</h1>
                 <p class="text-light opacity-75 lead mb-0" style="font-size: 1.05rem;">
-                    Bring back the sparkle and absolute freshness to your living spaces with our comprehensive home deep cleaning solutions. We ensure a healthy, spotless, and germ-free sanctuary for you and your family every single day.
+                    Experience hassle-free household living with our comprehensive support services. From dependable general staffing and expert facility care to long-term permanent management, we ensure your living space runs smoothly, safely, and efficiently every single day.
                 </p>
             </div>
             <div class="col-lg-5">
-                <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10">
+                <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10 shadow-lg">
                     <h5 class="fw-bold text-warning mb-2">Why Homeowners Trust Us:</h5>
                     <ul class="list-unstyled text-light opacity-75 small mb-0">
-                        <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2"></i> 100% safe, non-toxic & eco-friendly products</li>
-                        <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2"></i> Background-verified & trained cleaning experts</li>
-                        <li class="mb-0"><i class="fa-solid fa-circle-check text-warning me-2"></i> Thorough room-by-room deep sanitization</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2"></i> Thoroughly police-verified and trained domestic staff</li>
+                        <li class="mb-2"><i class="fa-solid fa-circle-check text-warning me-2"></i> End-to-end community upkeep & maintenance</li>
+                        <li class="mb-0"><i class="fa-solid fa-circle-check text-warning me-2"></i> Dedicated supervision and permanent management support</li>
                     </ul>
                 </div>
             </div>
@@ -99,113 +107,175 @@
     </div>
 </section>
 
-<!-- 2. Alternating Modern Feature List (Fixed Image Heights - No Cutting) -->
+<!-- ========================================== -->
+<!-- SECTION 2: 3 DISTINCT HOUSEHOLD SERVICES -->
+<!-- ========================================== -->
 <section class="py-5 bg-white">
     <div class="container py-4">
         
         <div class="text-center mx-auto mb-5" style="max-width: 650px;">
-            <span class="text-warning fw-bold text-uppercase small">Residential Offerings</span>
-            <h2 class="fw-bold text-dark h2 mt-1">Our Tailored Home Services</h2>
-            <p class="text-muted small">Designed specifically to keep apartments, villas, and independent houses pristine and hygienic.</p>
+            <span class="text-warning fw-bold text-uppercase small">Household Expertise</span>
+            <h2 class="fw-bold text-dark h2 mt-1">Our Tailored Household Services</h2>
+            <p class="text-muted small">Designed specifically for modern independent homes, apartment societies, villas, and gated communities.</p>
         </div>
 
-        <!-- Service 1: Kitchen Deep Cleaning -->
+        <!-- Service 1: General Staffing (Image: generalstaffing.jpg) -->
         <div class="row align-items-center g-5 mb-5 pb-4 border-bottom">
             <div class="col-lg-6">
-                <div class="rounded-4 overflow-hidden shadow-sm bg-light" style="height: 320px;">
-                    <img src="images/kitchencleaning.jpg" alt="Kitchen Cleaning" class="w-100 h-100" style="object-fit: cover; object-position: center; display: block;">
+                <div class="rounded-4 overflow-hidden shadow-sm bg-light position-relative service-img-wrapper" style="height: 400px;">
+                    <img src="https://i.pinimg.com/1200x/66/cb/de/66cbde14990d3fff67ebd2aae6c12f7b.jpg" alt="General Staffing Services" class="w-100 h-100 transition-transform" style="object-fit: cover; object-position: center; display: block;">
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-4">
-                <span class="text-warning fw-bold small text-uppercase">01 / Grease & Chimney Care</span>
-                <h3 class="fw-bold text-dark h4 mt-1 mb-3">Kitchen Deep Cleaning</h3>
+                <span class="text-warning fw-bold small text-uppercase">01 / Household Manpower</span>
+                <h3 class="fw-bold text-dark h4 mt-1 mb-3">General Staffing</h3>
                 <p class="text-muted small lh-lg mb-4">
-                    The kitchen is the heart of your home, but it accumulates heavy oil grease, stubborn stains, and smoke residue over time. Our intensive kitchen deep cleaning covers heavy-duty degreasing for chimneys, exhaust fans, gas burners, wall tiles, modular cabinets from inside and outside, and sink sanitization to ensure a completely spotless and hygienic cooking environment.
+                    Finding reliable, trustworthy, and skilled domestic help can be challenging. We provide verified general staffing solutions for your home, including professional housekeepers, cooks, security personnel, and utility attendants. Every staff member undergoes strict background checks and skill verification to ensure complete peace of mind and safety for your family.
                 </p>
-                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2">Inquire Now &rarr;</a>
+                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2 transition-all">Inquire Now &rarr;</a>
             </div>
         </div>
 
-        <!-- Service 2: Window & Door Cleaning (Reversed Layout) -->
+        <!-- Service 2: Facility Management (Reversed Layout) (Image: facilitymanagement.jpg) -->
         <div class="row align-items-center g-5 mb-5 pb-4 border-bottom flex-lg-row-reverse">
             <div class="col-lg-6">
-                <div class="rounded-4 overflow-hidden shadow-sm bg-light" style="height: 320px;">
-                    <img src="images/windowcleaning.jpg" alt="Window and Door Cleaning" class="w-100 h-100" style="object-fit: cover; object-position: center; display: block;">
+                <div class="rounded-4 overflow-hidden shadow-sm bg-light position-relative service-img-wrapper" style="height: 415px;">
+                    <img src="https://i.pinimg.com/1200x/67/35/52/673552b045357a87928b354cff74c5e2.jpg" alt="Facility Management Services" class="w-100 h-100 transition-transform" style="object-fit: cover; object-position: center; display: block;">
                 </div>
             </div>
             <div class="col-lg-6 pe-lg-4">
-                <span class="text-warning fw-bold small text-uppercase">02 / Crystal Clear Glass Care</span>
-                <h3 class="fw-bold text-dark h4 mt-1 mb-3">Window & Door Cleaning</h3>
+                <span class="text-warning fw-bold small text-uppercase">02 / Society & Villa Care</span>
+                <h3 class="fw-bold text-dark h4 mt-1 mb-3">Facility Management</h3>
                 <p class="text-muted small lh-lg mb-4">
-                    Dust, pollution particles, and water marks make home glass windows and doors look hazy and dull. We provide professional streak-free cleaning for glass panes, window channels, sliding tracks, mesh frames, and wooden or metallic doors. This brings in maximum natural sunlight and enhances the overall aesthetic look of your entire residential property.
+                    Maintain the highest standards of hygiene and upkeep across residential complexes, apartment buildings, and private estates. Our comprehensive facility management covers common area maintenance, waste disposal systems, plumbing, electrical upkeep, and landscaped grounds management, ensuring an immaculate living environment for all members.
                 </p>
-                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2">Inquire Now &rarr;</a>
+                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2 transition-all">Inquire Now &rarr;</a>
             </div>
         </div>
 
-        <!-- Service 3: Internal Floor Cleaning -->
+        <!-- Service 3: Permanent Management (Image: permanentmanagement.jpg) -->
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <div class="rounded-4 overflow-hidden shadow-sm bg-light" style="height: 320px;">
-                    <img src="images/floorcleaning.jpg" alt="Internal Floor Cleaning" class="w-100 h-100" style="object-fit: cover; object-position: center; display: block;">
+                <div class="rounded-4 overflow-hidden shadow-sm bg-light position-relative service-img-wrapper" style="height: 400px;">
+                    <img src="https://i.pinimg.com/736x/be/98/65/be986515b9930bfc4ab22b2cc29e6533.jpg" alt="Permanent Management Services" class="w-100 h-100 transition-transform" style="object-fit: cover; object-position: center; display: block;">
                 </div>
             </div>
             <div class="col-lg-6 ps-lg-4">
-                <span class="text-warning fw-bold small text-uppercase">03 / Surface Hygiene & Shine</span>
-                <h3 class="fw-bold text-dark h4 mt-1 mb-3">Internal Floor Cleaning</h3>
+                <span class="text-warning fw-bold small text-uppercase">03 / Long-Term Oversight</span>
+                <h3 class="fw-bold text-dark h4 mt-1 mb-3">Permanent Management</h3>
                 <p class="text-muted small lh-lg mb-4">
-                    Everyday sweeping and mopping often fails to lift ingrained dirt and stains from tile grouts and floor surfaces. Our specialized internal floor cleaning uses advanced machine scrubbing and safe chemical solutions tailored for marble, tiles, wooden flooring, and granite. We remove stubborn marks and restore a smooth, clean, and polished texture to your home floors.
+                    Eliminate the daily stress of household supervision with our permanent management services. We take absolute charge of coordinating domestic staff, scheduling routine maintenance, monitoring security protocols, and handling vendor management on a long-term basis so you can enjoy a seamless, worry-free lifestyle at home.
                 </p>
-                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2">Inquire Now &rarr;</a>
+                <a href="contact.html" class="btn btn-outline-dark btn-sm rounded-pill px-4 fw-bold py-2 transition-all">Inquire Now &rarr;</a>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- 3. Clean Grid FAQ Section -->
+<!-- ========================================== -->
+<!-- SECTION 3: HOUSEHOLD INTERACTIVE FAQ SECTION -->
+<!-- ========================================== -->
 <section class="py-5 bg-light border-top">
     <div class="container py-4" style="max-width: 900px;">
         
         <div class="text-center mb-5">
-            <span class="text-warning fw-bold text-uppercase small">Homeowner FAQs</span>
+            <span class="text-warning fw-bold text-uppercase small">Common FAQs</span>
             <h2 class="fw-bold text-dark h2 mt-1">Frequently Asked Questions</h2>
-            <p class="text-muted small">Everything you need to know about our residential cleaning packages and safety measures.</p>
+            <p class="text-muted small">Everything you need to know about our home staffing, facility upkeep, and permanent management solutions.</p>
         </div>
 
-        <div class="row g-4">
-            <!-- FAQ Box 1 -->
-            <div class="col-md-6">
-                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-start border-warning border-4">
-                    <h5 class="fw-bold text-dark h6 mb-2">Do I need to stay home during the cleaning process?</h5>
-                    <p class="text-muted small mb-0 lh-base">Not at all! Many of our residential clients safely hand over duplicate keys or leave instructions while they are out at work, running errands, or travelling.</p>
+        <!-- Bootstrap Accordion with Smooth Animation -->
+        <div class="accordion custom-accordion" id="householdFAQ">
+            
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item border-0 bg-white rounded-4 shadow-sm mb-3 overflow-hidden">
+                <h2 class="accordion-header" id="houseHeadingOne">
+                    <button class="accordion-button fw-bold text-dark collapsed px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#houseCollapseOne" aria-expanded="false" aria-controls="houseCollapseOne">
+                        <i class="fa-solid fa-circle-question text-warning me-2"></i> Are all home staff members background-checked and verified?
+                    </button>
+                </h2>
+                <div id="houseCollapseOne" class="accordion-collapse collapse" aria-labelledby="houseHeadingOne" data-bs-parent="#householdFAQ">
+                    <div class="accordion-body text-muted small lh-base px-4 pb-4 pt-0">
+                        Yes, safety is our top priority. All our domestic staff, housekeepers, and attendants undergo rigorous police verification, identity checks, and professional skill assessments before deployment.
+                    </div>
                 </div>
             </div>
-            <!-- FAQ Box 2 -->
-            <div class="col-md-6">
-                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-start border-warning border-4">
-                    <h5 class="fw-bold text-dark h6 mb-2">Are your cleaning chemicals safe for children and pets?</h5>
-                    <p class="text-muted small mb-0 lh-base">Yes, absolutely. We strictly utilize eco-friendly, non-toxic, skin-safe, and biodegradable cleaning products that pose zero health risks to your family members or pets.</p>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item border-0 bg-white rounded-4 shadow-sm mb-3 overflow-hidden">
+                <h2 class="accordion-header" id="houseHeadingTwo">
+                    <button class="accordion-button fw-bold text-dark collapsed px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#houseCollapseTwo" aria-expanded="false" aria-controls="houseCollapseTwo">
+                        <i class="fa-solid fa-circle-question text-warning me-2"></i> What does facility management include for societies and villas?
+                    </button>
+                </h2>
+                <div id="houseCollapseTwo" class="accordion-collapse collapse" aria-labelledby="houseHeadingTwo" data-bs-parent="#householdFAQ">
+                    <div class="accordion-body text-muted small lh-base px-4 pb-4 pt-0">
+                        Our facility management covers common area cleaning, waste management, security guard deployment, routine electrical/plumbing maintenance, and overall society upkeep.
+                    </div>
                 </div>
             </div>
-            <!-- FAQ Box 3 -->
-            <div class="col-md-6">
-                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-start border-warning border-4">
-                    <h5 class="fw-bold text-dark h6 mb-2">What equipment do your home cleaning teams bring?</h5>
-                    <p class="text-muted small mb-0 lh-base">Our professional team arrives fully equipped with single-disc floor scrubbing machines, high-power vacuum cleaners, microfiber cloths, and specialized cleaning liquids.</p>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item border-0 bg-white rounded-4 shadow-sm mb-3 overflow-hidden">
+                <h2 class="accordion-header" id="houseHeadingThree">
+                    <button class="accordion-button fw-bold text-dark collapsed px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#houseCollapseThree" aria-expanded="false" aria-controls="houseCollapseThree">
+                        <i class="fa-solid fa-circle-question text-warning me-2"></i> Can I request a replacement if I am not satisfied with the deployed staff?
+                    </button>
+                </h2>
+                <div id="houseCollapseThree" class="accordion-collapse collapse" aria-labelledby="houseHeadingThree" data-bs-parent="#householdFAQ">
+                    <div class="accordion-body text-muted small lh-base px-4 pb-4 pt-0">
+                        Absolutely. If you face any issues with the performance or compatibility of the assigned staff, we provide quick replacements under our service agreement to ensure uninterrupted support.
+                    </div>
                 </div>
             </div>
-            <!-- FAQ Box 4 -->
-            <div class="col-md-6">
-                <div class="p-4 bg-white rounded-4 shadow-sm h-100 border-start border-warning border-4">
-                    <h5 class="fw-bold text-dark h6 mb-2">How long does a full home cleaning service take?</h5>
-                    <p class="text-muted small mb-0 lh-base">Depending on the size and layout of your residence (ranging from 1 BHK to 3+ BHK villas), it usually takes anywhere between 4 to 8 hours with our expert crew.</p>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item border-0 bg-white rounded-4 shadow-sm mb-3 overflow-hidden">
+                <h2 class="accordion-header" id="houseHeadingFour">
+                    <button class="accordion-button fw-bold text-dark collapsed px-4 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#houseCollapseFour" aria-expanded="false" aria-controls="houseCollapseFour">
+                        <i class="fa-solid fa-circle-question text-warning me-2"></i> How does permanent management work for individual homeowners?
+                    </button>
+                </h2>
+                <div id="houseCollapseFour" class="accordion-collapse collapse" aria-labelledby="houseHeadingFour" data-bs-parent="#householdFAQ">
+                    <div class="accordion-body text-muted small lh-base px-4 pb-4 pt-0">
+                        Under permanent management, our supervisory team takes complete control of coordinating your household chores, managing staff shifts, handling maintenance vendors, and ensuring flawless day-to-day operations.
+                    </div>
                 </div>
             </div>
+
         </div>
 
     </div>
 </section>
+
+<!-- ========================================== -->
+<!-- CUSTOM STYLING & ANIMATIONS -->
+<!-- ========================================== -->
+<style>
+    .service-img-wrapper img {
+        transition: transform 0.5s ease;
+    }
+    .service-img-wrapper:hover img {
+        transform: scale(1.05);
+    }
+    .btn-outline-dark:hover {
+        background-color: #ffc107 !important;
+        border-color: #ffc107 !important;
+        color: #000 !important;
+        transform: translateY(-2px);
+    }
+    .custom-accordion .accordion-button:not(.collapsed) {
+        background-color: #fffaf0;
+        color: #000 !important;
+        box-shadow: none;
+    }
+    .custom-accordion .accordion-button:focus {
+        box-shadow: none;
+        border-color: rgba(0,0,0,.125);
+    }
+</style>
+
     <!-- Footer Section -->
     <footer class="bg-primary-custom text-light pt-5 pb-3 border-top border-secondary">
         <div class="container py-4">

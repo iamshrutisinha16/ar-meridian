@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- EmailJS CDN Script -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/emailjs.min.js"></script>
+    <!-- EmailJS Browser SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<!-- Top Contact Bar (100% Mobile Responsive) -->
 <div class="top-bar text-white py-2 px-3">
     <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center text-center text-lg-start gap-2">
         
@@ -39,11 +39,11 @@
     </div>
 </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-    <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
-  </a>
+                <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
+            </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,74 +52,86 @@
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Services
-    </a>
-    <ul class="dropdown-menu shadow-lg border-0 rounded-3 py-2 animate-dropdown" aria-labelledby="servicesDropdown">
-        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Commercialservices.html">Commercial Service</a></li>
-        <li><a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Residentialcleaning.html">Residential Service</a></li>
-    </ul>
-</li>
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu shadow-lg border-0 rounded-3 py-2 animate-dropdown" aria-labelledby="servicesDropdown">
+                            <!-- Our Services & Requirement Based Services Dropdown -->
+                            <li>
+                                <a class="dropdown-item py-2 px-3 fw-bold text-dark border-bottom border-light" href="Commercialservices.html">
+                                    <i class="fa-solid fa-briefcase me-2 text-warning"></i> Our Services
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-2 px-3 fw-medium text-dark" href="Residentialcleaning.html">
+                                    <i class="fa-solid fa-clipboard-check me-2 text-warning"></i> Required Services
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <!-- Updated Distributor Button for Direct Call -->
-<div class="d-none d-lg-block">
-    <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
-        <i class="fa-solid fa-phone me-2"></i> Call Now
-    </a>
-</div>
+            <div class="d-none d-lg-block">
+                <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
+                    <i class="fa-solid fa-phone me-2"></i> Call Now
+                </a>
+            </div>
         </div>
     </nav>
-
-    <!-- 1. Ultra-Modern About Banner with Floating Badge -->
-<section class="about-hero position-relative text-white py-4 py-lg-5 overflow-hidden">
-    <div class="container py-4 py-lg-5 position-relative z-2">
-        <div class="row align-items-center g-4 g-lg-5">
+<section class="about-hero position-relative text-white py-4 overflow-hidden">
+    <div class="container py-3 position-relative z-2">
+        <div class="row align-items-center g-4">
             
-            <!-- Left Text Content -->
-            <div class="col-lg-7">
-                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3 shadow-sm text-uppercase tracking-wider fs-7">
-                    <i class="fa-solid fa-sparkles me-1"></i> Excellence Since Inception
+            <!-- Left Text Content (No Box, Direct Clean Text on Image) -->
+            <div class="col-lg-7 px-lg-3">
+                <span class="badge bg-warning text-dark px-3 py-1.5 rounded-pill fw-bold mb-2 shadow-sm text-uppercase tracking-wider" style="font-size: 12px;">
+                    <i class="fa-solid fa-sparkles me-1"></i> AR Shine & Enterprise Excellence
                 </span>
                 
-                <!-- Responsive Heading using clamp for fluid typography on all screens -->
-                <h1 class="fw-black mb-3 mb-lg-4 text-white lh-tight" style="font-size: clamp(2rem, 4.5vw, 3.5rem);">
-                    Crafting Purity, <span class="text-warning">Empowering Trust</span> Worldwide.
+                <h1 class="fw-bold mb-3 text-white lh-tight text-shadow" style="font-size: clamp(2rem, 3.8vw, 3.2rem);">
+                    Crafting Superior Shine, <span class="text-warning">Maximizing B2B Margins</span> Worldwide.
                 </h1>
                 
-                <p class="lead text-light opacity-9 mb-4 fw-light fs-6 fs-lg-5">
-                    AR Meridian is more than a hygiene solutions provider. We are your dedicated catalysts for corporate cleanliness, superior product performance, and robust global partnerships.
+                <p class="text-light mb-4 fw-normal fs-6 lh-base text-shadow opacity-95" style="max-width: 600px;">
+                    AR Meridian delivers top-tier cleaning liquids, AR Shine products, and high-value corporate staffing solutions designed to secure maximum profitability for your business.
                 </p>
                 
-                <!-- Responsive Action Buttons -->
-                <div class="d-flex flex-wrap gap-2 gap-sm-3">
-                    <a href="index.html#enquiry" class="btn btn-warning fw-bold text-dark px-4 py-2.5 py-sm-3 rounded-pill shadow fs-7 fs-sm-6">
-                        Partner With Us
+                <!-- Action Buttons -->
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="index.html#enquiry" class="btn btn-warning fw-bold text-dark px-4 py-2.5 rounded-pill shadow-lg">
+                        <i class="fa-solid fa-handshake me-1"></i> Partner With Us
                     </a>
-                    <a href="tel:+917837793820" class="btn btn-outline-light fw-bold px-4 py-2.5 py-sm-3 rounded-pill fs-7 fs-sm-6">
+                    <a href="tel:+917837793820" class="btn btn-outline-light fw-bold px-4 py-2.5 rounded-pill">
                         <i class="fa-solid fa-phone text-warning me-2"></i> +91 7837793820
                     </a>
                 </div>
             </div>
 
-            <!-- Right Floating Card Box -->
+            <!-- Right Feature Cards (Clean Glass / Border Style without heavy solid block) -->
             <div class="col-lg-5">
-                <div class="position-relative p-3 p-sm-4 bg-white bg-opacity-10 backdrop-blur rounded-4 border border-light border-opacity-25 shadow-lg">
+                <div class="d-flex flex-column gap-3">
                     
-                    <div class="d-flex align-items-center gap-3 gap-sm-4 mb-3 mb-sm-4">
-                        <div class="bg-warning text-dark p-3 rounded-3 fs-3 fw-bold text-center" style="min-width: 70px;">ISO</div>
+                    <!-- Feature 1 -->
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-4 border border-warning border-opacity-40 shadow" style="background: rgba(11, 15, 25, 0.65); backdrop-filter: blur(8px);">
+                        <div class="bg-warning text-dark p-2.5 rounded-3 fs-4 fw-bold text-center shadow-sm" style="min-width: 55px;">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
                         <div>
-                            <h4 class="fw-bold text-white mb-1 h6 h5-sm">9001:2015 Certified</h4>
-                            <p class="text-light small opacity-75 mb-0">Adhering strictly to international quality & standard protocols.</p>
+                            <h4 class="fw-bold text-white mb-0 fs-6">Bulk Manufacturing Supply</h4>
+                            <p class="text-light small opacity-85 mb-0" style="font-size: 13px;">Direct factory supply of high-grade AR Shine liquids at scale.</p>
                         </div>
                     </div>
                     
-                    <div class="d-flex align-items-center gap-3 gap-sm-4">
-                        <div class="bg-warning text-dark p-3 rounded-3 fs-3 fw-bold text-center" style="min-width: 70px;"><i class="fa-solid fa-globe"></i></div>
+                    <!-- Feature 2 -->
+                    <div class="d-flex align-items-center gap-3 p-3 rounded-4 border border-warning border-opacity-40 shadow" style="background: rgba(11, 15, 25, 0.65); backdrop-filter: blur(8px);">
+                        <div class="bg-warning text-dark p-2.5 rounded-3 fs-4 fw-bold text-center shadow-sm" style="min-width: 55px;">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
                         <div>
-                            <h4 class="fw-bold text-white mb-1 h6 h5-sm">Global Reach</h4>
-                            <p class="text-light small opacity-75 mb-0">Delivering premium cleaning products across domestic & global markets.</p>
+                            <h4 class="fw-bold text-white mb-0 fs-6">High-Margin B2B Deals</h4>
+                            <p class="text-light small opacity-85 mb-0" style="font-size: 13px;">Exclusive distributor pricing and profitable corporate contracts.</p>
                         </div>
                     </div>
 
@@ -129,6 +141,12 @@
         </div>
     </div>
 </section>
+
+<style>
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    }
+</style>
 
 <!-- 2. Interactive Stats Counter Bar -->
 <section class="bg-primary-custom text-white py-4 border-bottom border-secondary">
@@ -159,7 +177,7 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 scroll-reveal">
                     <div class="position-relative">
-                        <img src="images/AR Shine.jpeg" alt="AR Meridian Workspace" class="img-fluid rounded-4 shadow-xl w-100 object-fit-cover" style="height: 450px;">
+                        <img src="https://i.pinimg.com/1200x/15/b6/9a/15b69ad1b78d7e12c3aabdde04e9ddbe.jpg" alt="AR Meridian Workspace" class="img-fluid rounded-4 shadow-xl w-100 object-fit-cover" style="height: 500px;">
                         <div class="position-absolute top-0 start-0 translate-middle-y ms-4 bg-warning text-dark fw-bold px-4 py-2 rounded-pill shadow">
                             <i class="fa-solid fa-award me-1"></i> Premium Standard
                         </div>
@@ -263,19 +281,22 @@
 
         <!-- Bento Grid Layout: 1 Big Image on Left, Stacked Images on Right -->
         <div class="row g-4">
-            
-            <!-- Left Big Featured Card -->
-            <div class="col-lg-7">
-                <div class="bento-card big-card position-relative rounded-4 overflow-hidden shadow-lg h-100 cursor-pointer" onclick="updatePreview(0)" style="min-height: 450px;">
-                    <img src="images/AR wasgingpowderprimium.jpeg" alt="Big Featured Image" class="w-100 h-100 object-fit-cover card-img">
-                    <div class="position-absolute top-0 start-0 w-100 h-100 card-gradient"></div>
-                    <div class="position-absolute bottom-0 start-0 w-100 p-4 p-md-5 text-white z-2">
-                        <span class="badge bg-warning text-dark fw-bold mb-2 px-3 py-1 rounded-pill">Primary Showcase</span>
-                        <h3 class="h3 fw-bold text-white mb-2">AR Premium Washing Powder Manufacturing</h3>
-                        <p class="text-light small mb-0 lh-base">Engineered with active enzyme technology for superior deep cleaning and long-lasting fabric freshness.</p>
-                    </div>
-                </div>
-            </div>
+           <!-- Left Big Featured Card (AR Shine Bottle Focus) -->
+<div class="col-lg-7">
+    <div class="bento-card big-card position-relative rounded-4 overflow-hidden shadow-lg h-100 cursor-pointer" onclick="updatePreview(0)" style="min-height: 450px;">
+        <img src="images/AR Shine.jpeg" alt="AR Shine Bottle Showcase" class="w-100 h-100 object-fit-cover card-img">
+        <div class="position-absolute top-0 start-0 w-100 h-100 card-gradient"></div>
+        <div class="position-absolute bottom-0 start-0 w-100 p-4 p-md-5 text-white z-2">
+            <span class="badge bg-warning text-dark fw-bold mb-2 px-3 py-1 rounded-pill shadow-sm">
+                <i class="fa-solid fa-sparkles me-1"></i> Primary Showcase
+            </span>
+            <h3 class="h3 fw-bold text-white mb-2">AR Shine Liquid & Surface Cleaner Manufacturing</h3>
+            <p class="text-light small mb-0 lh-base">
+                Formulated with advanced high-gloss shine technology for spotless, streak-free surfaces and long-lasting crystal clarity across commercial spaces.
+            </p>
+        </div>
+    </div>
+</div>
 
             <!-- Right Stacked Cards Column -->
             <div class="col-lg-5 d-flex flex-column gap-4">
@@ -336,7 +357,7 @@
         </div>
     </section>
 
-    <!-- 6. Featured Products Section (Replaced Team Section) -->
+   <!-- 6. Featured Products Section (Updated & Space-Optimized) -->
 <section class="py-5 bg-light">
     <div class="container py-4">
         <div class="text-center max-w-700 mx-auto mb-5 scroll-reveal">
@@ -351,9 +372,9 @@
             <!-- Product 1: Washing Powder -->
             <div class="col-md-3 col-sm-6 scroll-reveal">
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 text-center bg-white hover-card">
-                    <div class="position-relative overflow-hidden bg-white p-3">
+                    <div class="position-relative overflow-hidden bg-white p-3 d-flex align-items-center justify-content-center" style="height: 220px;">
                         <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 z-2 fw-bold shadow-sm">Best Seller</span>
-                        <img src="images/AR wasgingpowderprimium.jpeg" alt="AR Washing Powder" class="img-fluid w-100 object-fit-contain rounded-3" style="height: 220px;">
+                        <img src="images/AR wasgingpowderprimium.jpeg" alt="AR Washing Powder" class="img-fluid w-100 h-100 object-fit-contain rounded-3">
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -370,9 +391,9 @@
             <!-- Product 2: Liquid Cleaning Chemicals -->
             <div class="col-md-3 col-sm-6 scroll-reveal">
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 text-center bg-white hover-card">
-                    <div class="position-relative overflow-hidden bg-white p-3">
+                    <div class="position-relative overflow-hidden bg-white p-3 d-flex align-items-center justify-content-center" style="height: 220px;">
                         <span class="badge bg-danger text-white position-absolute top-0 start-0 m-3 z-2 fw-bold shadow-sm">Commercial</span>
-                        <img src="images/AR washing.jpeg" alt="Cleaning Chemicals" class="img-fluid w-100 object-fit-contain rounded-3" style="height: 220px;">
+                        <img src="images/AR washing.jpeg" alt="Cleaning Chemicals" class="img-fluid w-100 h-100 object-fit-contain rounded-3">
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
@@ -386,17 +407,17 @@
                 </div>
             </div>
 
-            <!-- Product 3: Kitchen Care -->
+            <!-- Product 3: Surface Care Solution (Replaced Kitchen Care) -->
             <div class="col-md-3 col-sm-6 scroll-reveal">
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 text-center bg-white hover-card">
-                    <div class="position-relative overflow-hidden bg-white p-3">
+                    <div class="position-relative overflow-hidden bg-white p-3 d-flex align-items-center justify-content-center" style="height: 220px;">
                         <span class="badge bg-success text-white position-absolute top-0 start-0 m-3 z-2 fw-bold shadow-sm">Eco-Safe</span>
-                        <img src="images/kitchencleaning.jpg" alt="Kitchen Cleaning" class="img-fluid w-100 object-fit-cover rounded-3" style="height: 220px;">
+                        <img src="images/AR wasgingpowderprimium.jpeg" alt="Surface Care" class="img-fluid w-100 h-100 object-fit-contain rounded-3">
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>
-                            <h3 class="fw-bold text-primary-custom h5 mb-1">Kitchen & Floor Care</h3>
-                            <p class="text-muted small mb-3">Deep cleaning solutions for spotless kitchens, tiles, and heavy grease.</p>
+                            <h3 class="fw-bold text-primary-custom h5 mb-1">Surface & Floor Care</h3>
+                            <p class="text-muted small mb-3">Deep cleaning solutions for spotless tiles, marbles, and heavy-duty areas.</p>
                         </div>
                         <div>
                             <a href="Commercialservices.html" class="btn btn-outline-warning text-dark fw-bold btn-sm w-100 rounded-pill shadow-sm py-2">View Details</a>
@@ -408,9 +429,9 @@
             <!-- Product 4: Facility Hygiene Care -->
             <div class="col-md-3 col-sm-6 scroll-reveal">
                 <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 text-center bg-white hover-card">
-                    <div class="position-relative overflow-hidden bg-white p-3">
+                    <div class="position-relative overflow-hidden bg-white p-3 d-flex align-items-center justify-content-center" style="height: 220px;">
                         <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 z-2 fw-bold shadow-sm">Certified</span>
-                        <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=600&q=80" alt="Facility Hygiene" class="img-fluid w-100 object-fit-cover rounded-3" style="height: 220px;">
+                        <img src="images/AR washing.jpeg" alt="Facility Hygiene" class="img-fluid w-100 h-100 object-fit-contain rounded-3">
                     </div>
                     <div class="p-4 d-flex flex-column justify-content-between flex-grow-1">
                         <div>

@@ -54,7 +54,7 @@ img, video, iframe {
         gap: 4px !important;
     }
 
-    /* Mobile par phone aur email ko ek ke niche ek ya proper gap mein set karne ke liye */
+    
     .top-contact-info {
         flex-direction: column;
         gap: 2px !important;
@@ -115,6 +115,16 @@ img, video, iframe {
     }
 }
 
+/* Fix for Navbar Dropdown Click Issue on Home Page */
+.navbar {
+    position: relative;
+    z-index: 1050 !important;
+}
+
+.dropdown-menu {
+    z-index: 1060 !important;
+}
+
 /* Bounce and Pulse Animation */
 @keyframes bounce-pulse {
     0%, 100% {
@@ -143,48 +153,12 @@ img, video, iframe {
     filter: brightness(0.75);  
 }
 
-/* Automatic Smooth Infinite Marquee Scroll */
-.marquee-wrapper {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.marquee-track {
-    display: flex;
-    width: max-content;
-    animation: scrollMarquee 25s linear infinite;
-}
-
-.marquee-wrapper:hover .marquee-track {
-    animation-play-state: paused;
-}
-
-@keyframes scrollMarquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain; /* Yeh image ko bina kate poora dikhayega */
-    background-color: #f8f9fa; /* Background ko clean white/light rakhega */
-    padding: 10px; /* Thodi padding taaki product chipke nahi */
-}
-
 /* Offer Banner */
 .offer-banner {
     background: linear-gradient(rgba(10, 25, 47, 0.92), rgba(66, 101, 182, 0.92)), url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center;
 }
-
-/* Light & Clean Watercolor / Watermark Design Background for Enquiry Section */
 .light-watercolor-section {
     background: 
         radial-gradient(circle at 10% 20%, rgba(251, 191, 36, 0.18) 0%, transparent 50%),
@@ -209,7 +183,7 @@ img, video, iframe {
 
 .about-hero {
     min-height: 50vh;
-    background: linear-gradient(135deg, rgba(62, 128, 228, 0.4), rgba(7, 19, 37, 0.20)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(135deg, rgba(62, 128, 228, 0.4), rgba(7, 19, 37, 0.20)), url('https://i.pinimg.com/1200x/b4/c0/ac/b4c0acd877578072784b249c3bc50fa2.jpg');
     background-size: cover;
     background-position: center;
 }
