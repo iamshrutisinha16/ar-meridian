@@ -131,7 +131,7 @@ img, video, iframe {
         transform: translateY(0) scale(1);
     }
     50% {
-        transform: translateY(-8px) scale(1.1); /* Upar jayega aur thoda bada hoga */
+        transform: translateY(-8px) scale(1.1);
     }
 }
 
@@ -153,12 +153,6 @@ img, video, iframe {
     filter: brightness(0.75);  
 }
 
-/* Offer Banner */
-.offer-banner {
-    background: linear-gradient(rgba(10, 25, 47, 0.92), rgba(66, 101, 182, 0.92)), url('https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-}
 .light-watercolor-section {
     background: 
         radial-gradient(circle at 10% 20%, rgba(251, 191, 36, 0.18) 0%, transparent 50%),
@@ -183,7 +177,7 @@ img, video, iframe {
 
 .about-hero {
     min-height: 50vh;
-    background: linear-gradient(135deg, rgba(62, 128, 228, 0.4), rgba(7, 19, 37, 0.20)), url('https://i.pinimg.com/1200x/b4/c0/ac/b4c0acd877578072784b249c3bc50fa2.jpg');
+    background: linear-gradient(135deg, rgba(62, 128, 228, 0.4), rgba(7, 19, 37, 0.20)), url('/images/aboutbanner.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -200,7 +194,7 @@ img, video, iframe {
 /* contactus*/
 /* High-End Rich Contact Banner Styling */
 .contact-hero-banner {
-    background: linear-gradient(135deg, rgba(29, 74, 141, 0.96), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80');
+    background: linear-gradient(135deg, rgba(29, 74, 141, 0.75), rgba(15, 23, 42, 0.65)), url('/images/contactbanner.avif');
     background-size: cover;
     background-position: center;
 }

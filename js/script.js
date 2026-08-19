@@ -32,24 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // ==========================================
-    // 1. Ultimate Hero Slider Auto-Slide Fix
-    // ==========================================
-    var myCarousel = document.querySelector('#ultimateProductCarousel');
-    if (myCarousel && typeof bootstrap !== 'undefined') {
-        var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 3500,
-            ride: 'carousel',
-            pause: 'hover',
-            wrap: true
-        });
 
-        setInterval(function() {
-            if (carousel && typeof carousel.next === 'function') {
-                carousel.next();
-            }
-        }, 3500);
-    }
 
     // ==========================================
     // 2. Scroll Reveal Animation Observer
