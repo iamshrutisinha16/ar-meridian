@@ -458,19 +458,27 @@
             </div>
         </div>
     </section>
- <section class="w-100 overflow-hidden py-0">
+
+    <section class="w-100 overflow-hidden py-0">
     <div class="container-fluid px-0">
     
-        <div class="position-relative shadow-lg w-100" style="min-height: 650px; display: flex; align-items: center; background-image: url('images/highperformance.png'); background-size: cover; background-position: 75% center; background-repeat: no-repeat;">
+        <!-- Hero Section Container with Background Image -->
+        <div class="position-relative shadow-lg w-100" style="min-height: 650px; display: flex; align-items: center; background-image: url('images/highperformance.jpg'); background-size: cover; background-position: 75% center; background-repeat: no-repeat;">
             
-            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.88) 45%, rgba(15, 23, 42, 0.3) 75%, transparent 100%);"></div>
+            <!-- Flipped Background Gradient (Dark overlay) -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; background: linear-gradient(-90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.88) 45%, rgba(15, 23, 42, 0.3) 75%, transparent 100%);"></div>
 
-            <!-- Content Box on Left Side -->
+            <!-- Main container -->
             <div class="container position-relative" style="z-index: 2;">
                 <div class="row">
+                    <!-- Spacer on Left (empty column) to push content to right -->
+                    <div class="col-lg-5 col-xl-6 py-5"></div>
+
+                    <!-- Content Box on Right Side (was col-lg-7 col-xl-6) -->
                     <div class="col-lg-7 col-xl-6 py-5">
                         
-                        <div class="p-4 p-md-5 rounded-4 shadow-lg text-white" style="background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border-left: 5px solid #ffc107;">
+                        <!-- Dark, blurred content box with right-side styling -->
+                        <div class="p-4 p-md-5 rounded-4 shadow-lg text-white" style="background: rgba(15, 23, 42, 0.88); backdrop-filter: blur(8px); border-right: 5px solid #ffc107; border-left: none;">
                             
                             <span class="text-warning fw-bold text-uppercase tracking-wider small d-block mb-2">
                                 <i class="fa-solid fa-sparkles me-1"></i> AR Meridian Manufacturing
@@ -503,6 +511,7 @@
 
     </div>
 </section>
+
    <!-- Testimonials Section -->
     <section class="py-5 bg-light">
         <div class="container py-4">
