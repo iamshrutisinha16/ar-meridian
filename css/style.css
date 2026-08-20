@@ -67,7 +67,7 @@ img, video, iframe {
     }
     
     body {
-        padding-top: 90px;
+        padding-top: 80px;
     }
     
     .navbar {
@@ -75,6 +75,7 @@ img, video, iframe {
     }
 
     .navbar-logo {
+        margin-top: 12px;
         height: 35px !important;      
     }
 }
