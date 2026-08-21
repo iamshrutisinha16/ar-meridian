@@ -24,14 +24,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // Global Click Fix: Navbar toggler ya navbar ke andar click hone par dropdown/collapse conflict na ho
     document.addEventListener('click', function (e) {
+        // Agar click navbar-toggler ya navbar ke andar hua hai, toh kuch mat karo
+        if (e.target.closest('.navbar-toggler') || e.target.closest('.navbar-collapse')) {
+            return;
+        }
+
         if (!e.target.closest('.dropdown')) {
             document.querySelectorAll('.dropdown-menu.show').forEach(function(menu) {
                 menu.classList.remove('show');
             });
         }
     });
-
 
 
     // ==========================================

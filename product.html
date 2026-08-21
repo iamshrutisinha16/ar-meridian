@@ -41,41 +41,54 @@
     </div>
 </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
-            </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav align-items-lg-center gap-lg-4 mb-2 mb-lg-0 fw-semibold">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                     <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
-                     <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <!-- Updated Distributor Button for Direct Call -->
-            <div class="d-none d-lg-block">
-                <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm">
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-white">
+    <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/logo.png" alt="AR Meridian Logo" class="navbar-logo">
+        </a>
+
+        <!-- Mobile Toggler Button -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Collapse Area -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <!-- Center Nav Links -->
+            <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-4 mb-3 mb-lg-0 fw-semibold text-center">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <!-- Call Button -->
+            <div class="d-flex justify-content-center align-items-center pb-3 pb-lg-0">
+                <a href="tel:+917837793820" class="btn btn-warning fw-bold text-dark px-4 py-2 rounded-pill shadow-sm" style="font-size: 14px;">
                     <i class="fa-solid fa-phone me-2"></i> Call Now
                 </a>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <section class="py-5 overflow-hidden text-white" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
     <div class="container py-4">
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
-                <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold text-uppercase tracking-wider mb-3 shadow-sm">Enterprise Solutions</span>
-                <h1 class="display-5 fw-bold mb-3 lh-tight">Professional AR Washing, Floor Cleaning & Workspace Hygiene</h1>
-                <p class="text-light opacity-75 lead mb-0" style="font-size: 1.05rem;">
-                    Transform your commercial property with AR Meridian's specialized industrial maintenance services. We deliver state-of-the-art AR washing, intensive floor cleaning, and comprehensive surface sanitization to keep your corporate offices and business spaces spotless and welcoming.
-                </p>
+                <span class="badge bg-warning text-dark px-3 py-1.5 rounded-pill fw-bold text-uppercase tracking-wider mb-3 shadow-sm" style="font-size: 11px;">
+    Enterprise Solutions
+</span>
+
+<h1 class="fw-bold mb-3 lh-tight text-white" style="font-size: clamp(1.8rem, 3.5vw, 2.8rem);">
+    Professional AR Washing, Floor Cleaning & Workspace Hygiene
+</h1>
+
+<p class="text-light opacity-75 mb-0" style="font-size: 0.95rem; line-height: 1.5; max-width: 700px;">
+    Transform your commercial property with AR Meridian's specialized industrial maintenance services. We deliver state-of-the-art AR washing, intensive floor cleaning, and comprehensive surface sanitization to keep your corporate offices and business spaces spotless and welcoming.
+</p>
             </div>
             <div class="col-lg-5">
                 <div class="p-4 rounded-4 bg-white bg-opacity-10 border border-light border-opacity-10 shadow-lg">
@@ -231,29 +244,6 @@
     </div>
 </section>
 
-<style>
-    .service-img-wrapper img {
-        transition: transform 0.5s ease;
-    }
-    .service-img-wrapper:hover img {
-        transform: scale(1.05);
-    }
-    .btn-outline-dark:hover {
-        background-color: #ffc107 !important;
-        border-color: #ffc107 !important;
-        color: #000 !important;
-        transform: translateY(-2px);
-    }
-    .custom-accordion .accordion-button:not(.collapsed) {
-        background-color: #fffaf0;
-        color: #000 !important;
-        box-shadow: none;
-    }
-    .custom-accordion .accordion-button:focus {
-        box-shadow: none;
-        border-color: rgba(0,0,0,.125);
-    }
-</style>
 <!-- Footer Section -->
     <footer class="bg-primary-custom text-light pt-5 pb-3 border-top border-secondary">
         <div class="container py-4">
@@ -266,7 +256,6 @@
                     <p class="text-light small lh-lg opacity-75 mb-3">
                         Delivering premium cleaning products and reliable staffing solutions for businesses across India and worldwide.
                     </p>
-                    <!-- Clickable & Styled Social Media Icons -->
                     <div class="d-flex gap-2">
                         <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Facebook">
                             <i class="fa-brands fa-facebook-f"></i>
@@ -274,6 +263,15 @@
                         <a href="https://twitter.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Twitter">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
+                        <a href="https://www.instagram.com/ar.meridian?igsi=bXpoYWhxM3Q3Z3gy" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                         </a>
+    
+                     <a href="https://www.linkedin.com/company/ar-meridian/" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="LinkedIn">
+                      <i class="fa-brands fa-linkedin-in"></i></a>
+    
+                  <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;" title="WhatsApp">
+                      <i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
