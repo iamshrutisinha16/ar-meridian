@@ -38,39 +38,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-
-    // ==========================================
-    // 2. Scroll Reveal Animation Observer
-    // ==========================================
-    const revealElements = document.querySelectorAll('.scroll-reveal');
-
-    if ('IntersectionObserver' in window) {
-        const revealObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            root: null,
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        });
-
-        revealElements.forEach(el => revealObserver.observe(el));
-    } else {
-        revealElements.forEach(el => el.classList.add('active'));
-    }
-
-    window.updatePreview = function(index) {
-        const messages = [
-            "Primary Showcase selected: AR Shine & Surface Care",
-            "Surface Care category selected: Disinfection & Shine",
-            "Bulk Supply category selected: Commercial Production"
-        ];
-        console.log(messages[index] || "Preview updated");
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
     };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Ek baar animation chalne ke baad observer hata sakte hain
+                // observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    const revealElements = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
+    revealElements.forEach(el => observer.observe(el));
+
+
 
     // ==========================================
     // 3. Home Page Enquiry Form - EmailJS Integration

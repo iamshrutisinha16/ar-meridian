@@ -197,7 +197,6 @@ img, video, iframe {
     text-align: center;
 }
 
-/* Tablets aur Medium Screens ke liye */
 @media (min-width: 768px) {
     .about-hero {
         min-height: 45vh;
@@ -211,7 +210,6 @@ img, video, iframe {
     }
 }
 
-/* Team Image Zoom Effect on Hover */
 .team-img {
     transition: transform 0.4s ease;
 }
@@ -285,3 +283,57 @@ img, video, iframe {
         box-shadow: none;
         border-color: rgba(0,0,0,.125);
     }
+
+    /* --- Slide-in Scroll Animations Setup --- */
+.reveal-left, .reveal-right, .reveal-up {
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal-right {
+    transform: translateX(60px);
+}
+
+.reveal-up {
+    transform: translateY(40px);
+}
+
+/* Active class jab element viewport mein aayega (Intersection Observer ya scroll ke zariye) */
+.reveal-left.active, .reveal-right.active, .reveal-up.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* --- Premium Image & Card Hover Effects --- */
+.service-img-wrapper {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-img-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-img {
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.service-img-wrapper:hover .product-img {
+    transform: scale(1.05); /* Image smooth zoom on hover */
+}
+
+/* --- Custom Button Hover Style --- */
+.custom-hover-btn {
+    transition: all 0.3s ease;
+}
+
+.custom-hover-btn:hover {
+    background-color: #111;
+    color: #fff;
+    border-color: #111;
+    transform: translateX(4px);
+}
